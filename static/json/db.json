@@ -1,0 +1,304 @@
+{
+    "people": [
+        {
+            "id": 1,
+            "hit": false,
+            "hitValue": 2,
+            "photo": "https://lavkaroz.ru/files/images/cache/Goods/Goods101/544279f578-2_173x173.jpg",
+            "photoBig": "https://lavkaroz.ru/files/images/cache/Goods/Goods101/544279f578-2_404x404.jpg",
+            "name": "Букет 25 роз Нина 50 см",
+            "composition": [
+                {
+                    "роза Нина 50 см": "25 шт.",
+                    "Атласная лента": "1 шт."
+                }
+            ],
+            "price": 2250,
+            "discountPersent": false,
+            "thing": false,
+            "discount": false,
+            "height": 65,
+            "width": 40,
+            "pieceGoods": false,
+            "url": "flowersNine"
+        },
+        {
+            "id": 2,
+            "hit": false,
+            "hitValue": 2,
+            "photo": "https://lavkaroz.ru/files/images/cache/Goods/Goods10/915129ffe5-3_173x173.jpg",
+            "photoBig": "https://lavkaroz.ru/files/images/cache/Goods/Goods10/915129ffe5-3_404x404.jpg",
+            "name": "Букет роз Ред наоми 60 см.",
+            "composition": [
+                {
+                    "роза Ред наоми 60 см": "1 шт.",
+                    "Атласная лента": "1 шт."
+                }
+            ],
+            "price": 95,
+            "discountPersent": false,
+            "thing": true,
+            "discount": false,
+            "height": false,
+            "width": false,
+            "pieceGoods": true,
+            "url": "flowersRedNaomi"
+        },
+        {
+            "id": 3,
+            "hit": true,
+            "hitValue": 1,
+            "photo": "https://lavkaroz.ru/files/images/cache/Goods/Goods2/18e97e63dd-1_173x173.jpg",
+            "photoBig": "https://lavkaroz.ru/files/images/cache/Goods/Goods2/18e97e63dd-1_404x404.jpg",
+            "name": "Букет роз Пинк Флойд 30 см.",
+            "composition": [
+                {
+                    "роза Пинк Флойд": "15 шт.",
+                    "Фисташка": "5 шт.",
+                    "Упаковка крафт": "1 шт.",
+                    "Атласная лента": "1 шт."
+                }
+            ],
+            "price": 2150,
+            "discountPersent": 15,
+            "thing": false,
+            "discount": true,
+            "height": 30,
+            "width": 30,
+            "pieceGoods": false,
+            "url": "flowersPinkFloid"
+        },
+        {
+            "id": 4,
+            "hit": true,
+            "hitValue": 1,
+            "photo": "https://lavkaroz.ru/files/images/cache/Goods/Goods136/1cec89eff7-1_173x173.jpg",
+            "photoBig": "https://lavkaroz.ru/files/images/cache/Goods/Goods136/1cec89eff7-1_404x404.jpg",
+            "name": "Букет Ред пиано с Эвкалиптом",
+            "composition": [
+                {
+                    "Роза Ред пиано": "7 шт.",
+                    "Эвкалипт ": "5 шт.",
+                    "Упаковка": "1 шт."
+                }
+            ],
+            "price": 2190,
+            "discountPersent": 20,
+            "thing": false,
+            "discount": true,
+            "height": 50,
+            "width": 30,
+            "pieceGoods": false,
+            "url": "flowersRedPiano"
+        },
+        {
+            "id": 5,
+            "hit": false,
+            "hitValue": 2,
+            "photo": "https://lavkaroz.ru/files/images/cache/Goods/Goods125/216f57850d-1_173x173.jpg",
+            "photoBig": "https://lavkaroz.ru/files/images/cache/Goods/Goods125/216f57850d-1_404x404.jpg",
+            "name": "Букет 7 кустовых роз микс",
+            "composition": [
+                {
+                    "Кустовая роза": "7 шт.",
+                    "Атласная лента": "1 шт."
+                }
+            ],
+            "price": 1200,
+            "discountPersent": false,
+            "thing": false,
+            "discount": false,
+            "height": 60,
+            "width": 30,
+            "pieceGoods": true,
+            "url": "flowersSevenRose"
+        },
+        {
+            "id": 6,
+            "hit": false,
+            "hitValue": 2,
+            "photo": "https://lavkaroz.ru/files/images/cache/Goods/Goods110/3b74cbd343-1_173x173.jpg",
+            "photoBig": "https://lavkaroz.ru/files/images/cache/Goods/Goods110/3b74cbd343-1_404x404.jpg",
+            "name": "Букет Для любимой",
+            "composition": [
+                {
+                    "Гортензия": "1 шт.",
+                    "Эустома": "3 шт.",
+                    "Кустовая роза 70 см.": "2 шт.",
+                    "Статица": "3 шт.",
+                    "Роза кения 40 см.": "5 шт.",
+                    "Упаковка ": "1 шт.",
+                    "Атласная лента": "1 шт."
+                }
+            ],
+            "price": 1750,
+            "discountPersent": false,
+            "thing": false,
+            "discount": false,
+            "height": 50,
+            "width": 35,
+            "pieceGoods": true,
+            "url": "flowersForTheBeloved"
+        },
+        {
+            "id": 7,
+            "hit": false,
+            "hitValue": 3,
+            "photo": "https://lavkaroz.ru/files/images/cache/Goods/Goods86/d4f904e76b-1_173x173.jpg",
+            "photoBig": "https://lavkaroz.ru/files/images/cache/Goods/Goods86/d4f904e76b-1_404x404.jpg",
+            "name": "Коробка роза с альстромериями",
+            "composition": [
+                {
+                    "роза 40 см.": "21 шт.",
+                    "Альстромерия ": "3 шт.",
+                    "фисташка": "3 шт.",
+                    "коробка": "1 шт."
+                }
+            ],
+            "price": 2150,
+            "discountPersent": false,
+            "thing": false,
+            "discount": false,
+            "height": 30,
+            "width": 30,
+            "pieceGoods": true,
+            "url": "flowersRoseWithAltromeria"
+        },
+        {
+            "id": 8,
+            "hit": false,
+            "hitValue": 2,
+            "photo": "https://lavkaroz.ru/files/images/cache/Goods/Goods26/861ee3bbbd-3_173x173.jpg",
+            "photoBig": "https://lavkaroz.ru/files/images/cache/Goods/Goods26/861ee3bbbd-3_404x404.jpg",
+            "name": "Букет роз микс 40 см.",
+            "composition": [
+                {
+                    "роза 40 см.": "21 шт.",
+                    "Атласная лента ": "1 шт."
+                }
+            ],
+            "price": 48,
+            "discountPersent": false,
+            "thing": true,
+            "discount": false,
+            "height": false,
+            "width": false,
+            "pieceGoods": true,
+            "url": "flowersBouquetOfRosesMix40"
+        }
+    ],
+    "gifts": [
+        {
+            "hit": false,
+            "hitValue": 2,
+            "photo": "https://lavkaroz.ru/files/images/cache/Goods/Goods47/40333ae71e-1_173x173.jpg",
+            "name": "Конфеты Рафаело",
+            "price": 300,
+            "discountPersent": false,
+            "thing": false,
+            "discount": false,
+            "height": false,
+            "width": false,
+            "pieceGoods": false,
+            "url": "giftsRafaelo"
+        },
+        {
+            "hit": false,
+            "hitValue": 1,
+            "photo": "https://lavkaroz.ru/files/images/cache/Goods/Goods95/f99bcc4705-1_173x173.jpg",
+            "name": "Конфеты Merci",
+            "price": 400,
+            "discountPersent": false,
+            "thing": false,
+            "discount": false,
+            "height": false,
+            "width": false,
+            "pieceGoods": false,
+            "url": "giftsMersi"
+        },
+        {
+            "hit": false,
+            "hitValue": 3,
+            "photo": "https://lavkaroz.ru/files/images/cache/Goods/Goods44/1a9f129ec5-1_173x173.jpg",
+            "name": "Мишка 25 см.",
+            "price": 700,
+            "discountPersent": false,
+            "thing": false,
+            "discount": false,
+            "height": false,
+            "width": false,
+            "pieceGoods": false,
+            "url": "giftsBear25"
+        },
+        {
+            "hit": false,
+            "hitValue": 1,
+            "photo": "https://lavkaroz.ru/files/images/cache/Goods/Goods160/82610bebd4-1_173x173.png",
+            "name": "Шары с гелием 10 шт ",
+            "price": 1000,
+            "discountPersent": false,
+            "thing": false,
+            "discount": false,
+            "height": false,
+            "width": false,
+            "pieceGoods": false,
+            "url": "giftsBalloonsWithHelium10"
+        },
+        {
+            "hit": false,
+            "hitValue": 2,
+            "photo": "https://lavkaroz.ru/files/images/cache/Goods/Goods161/b2d37b1555-1_173x173.jpg",
+            "name": "Шары с гелием Черные и Белые 10 шт.",
+            "price": 1000,
+            "discountPersent": false,
+            "thing": false,
+            "discount": false,
+            "height": false,
+            "width": false,
+            "pieceGoods": false,
+            "url": "giftsBalloonsWithHeliumBlackAndWhite10"
+        },
+        {
+            "hit": false,
+            "hitValue": 3,
+            "photo": "https://lavkaroz.ru/files/images/cache/Goods/Goods162/861d50b396-1_173x173.jpg",
+            "name": "Шары с гелием Нежный микс 10 шт.",
+            "price": 1000,
+            "discountPersent": false,
+            "thing": false,
+            "discount": false,
+            "height": false,
+            "width": false,
+            "pieceGoods": false,
+            "url": "giftsBalloonsWithHeliumDecilateMix10"
+        },
+        {
+            "hit": false,
+            "hitValue": 1,
+            "photo": "https://lavkaroz.ru/files/images/cache/Goods/Goods45/fab0439bc2-1_173x173.jpg",
+            "name": "Мишка 50 см.",
+            "price": 1100,
+            "discountPersent": false,
+            "thing": false,
+            "discount": false,
+            "height": false,
+            "width": false,
+            "pieceGoods": false,
+            "url": "giftsBear50"
+        },
+        {
+            "hit": false,
+            "hitValue": 1,
+            "photo": "https://lavkaroz.ru/files/images/cache/Goods/Goods46/7ae54954d7-1_173x173.jpg",
+            "name": "Мишка 80 см.",
+            "price": 1800,
+            "discountPersent": false,
+            "thing": false,
+            "discount": false,
+            "height": false,
+            "width": false,
+            "pieceGoods": false,
+            "url": "giftsBear80"
+        }
+    ]
+}
