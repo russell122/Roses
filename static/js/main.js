@@ -354,36 +354,36 @@ window.addEventListener('DOMContentLoaded', () => {
 
 		// end
 
-		// Пересчет суммы при клике
+		// // Пересчет суммы при клике
 
-		let rightPriceValue = document.querySelector('.right__price-value');
-		let rightPricePlus = document.querySelector('.right__price-plus');
-		let rightPriceMinus = document.querySelector('.right__price-minus');
-		let rightPriceInp = document.querySelector('.right__price-inp > input');
-		let num = +rightPriceValue.innerHTML.replace(/\ ₽/, "");
+		// let rightPriceValue = document.querySelector('.right__price-value');
+		// let rightPricePlus = document.querySelector('.right__price-plus');
+		// let rightPriceMinus = document.querySelector('.right__price-minus');
+		// let rightPriceInp = document.querySelector('.right__price-inp > input');
+		// let num = +rightPriceValue.innerHTML.replace(/\ ₽/, "");
 
-		if (rightPriceInp) {
-			rightPriceInp.addEventListener('input', () => {
-				rightPriceValue.innerHTML = num * rightPriceInp.value;
-			})
-		}
+		// if (rightPriceInp) {
+		// 	rightPriceInp.addEventListener('input', () => {
+		// 		rightPriceValue.innerHTML = num * rightPriceInp.value;
+		// 	})
+		// }
 
-		if (rightPricePlus) {
-			rightPricePlus.addEventListener('click', () => {
-				rightPriceInp.value++;
-				rightPriceValue.innerHTML = num * rightPriceInp.value;
-			});
-		}
+		// if (rightPricePlus) {
+		// 	rightPricePlus.addEventListener('click', () => {
+		// 		rightPriceInp.value++;
+		// 		rightPriceValue.innerHTML = num * rightPriceInp.value;
+		// 	});
+		// }
 
-		if (rightPriceMinus) {
-			rightPriceMinus.addEventListener('click', () => {
-				rightPriceInp.value--;
-				rightPriceValue.innerHTML = num * rightPriceInp.value;
-			})
-		}
+		// if (rightPriceMinus) {
+		// 	rightPriceMinus.addEventListener('click', () => {
+		// 		rightPriceInp.value--;
+		// 		rightPriceValue.innerHTML = num * rightPriceInp.value;
+		// 	})
+		// }
 
 
-		// Конец Пересчета суммы при клике
+		// // Конец Пересчета суммы при клике
 
 		// Замена сердца
 
