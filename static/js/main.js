@@ -128,7 +128,7 @@ window.addEventListener('DOMContentLoaded', () => {
 		return await res.json();
 	}
 
-	databasePopularFlowers('/static/json/db.json')
+	databasePopularFlowers('static/json/db.json')
 		.then(data => outDatabasePopularFlowers(data))
 
 	function outDatabasePopularFlowers(data) {
@@ -354,7 +354,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 		// end
 
-		// // Пересчет суммы при клике
+		// Пересчет суммы при клике
 
 		// let rightPriceValue = document.querySelector('.right__price-value');
 		// let rightPricePlus = document.querySelector('.right__price-plus');
@@ -383,7 +383,7 @@ window.addEventListener('DOMContentLoaded', () => {
 		// }
 
 
-		// // Конец Пересчета суммы при клике
+		// Конец Пересчета суммы при клике
 
 		// Замена сердца
 
