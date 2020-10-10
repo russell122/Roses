@@ -182,17 +182,23 @@ window.addEventListener('DOMContentLoaded', () => {
 					class="catalog__item-img"><img src=${obj.photo} alt="${obj.name}" /></div>
 			<div class="catalog__item-body">
 				<h4 class="catalog__item-title">${obj.name}</h4>
-				<span class="catalog__item-lable">${obj.price} ₽ ${pieceGoods}</span>
-				<span class="catalog__item-discount">${price} ₽ ${pieceGoods}</span>
+				<span class="catalog__item-lable">${obj.price}
+				<div class="rub"></div>
+				 ${pieceGoods}</span>
+				<span class="catalog__item-discount">${price} 
+					<div class="rub"></div>
+				${pieceGoods}</span>
 			</div>
 			<div class="catalog__masc">
 				<div class="catalog__masc-wrap">
 					<h4 class="catalog__masc-title">${obj.name}</h4>
-					<span class="catalog__item-lable">${obj.price} ₽ ${pieceGoods}</span>
-					<span class="catalog__item-discount">${price} ₽ ${pieceGoods}</span>
+					<span class="catalog__item-lable rub2">${obj.price}
+					${pieceGoods}</span>
+					<span class="catalog__item-discount rub">${price}
+					${pieceGoods}</span>
 					<p class="catalog__masc-height"><span>Высота: </span><span class="catalog__masc-height-value">${catalogHeight}</span> см</p>
 					<p class="catalog__masc-width"><span>Ширина: </span><span class="catalog__masc-width-value">${catalogWidth}</span> см</p>
-					<div class="catalog__masc-btn"><a href="#">В корзину</a></div>
+					<div class="catalog__masc-btn"><a class="catalog__masc-btn-js" href="basket.html" data-number = ${obj.id}>В корзину</a></div>
 				</div>
 			</div>
 				`;
@@ -221,6 +227,8 @@ window.addEventListener('DOMContentLoaded', () => {
 			})
 
 		}
+
+
 
 		// Реализация при клике на элемент открывается новая страница(переход по ссылке), а на этой странице отображается информация о кликнутом элементе
 
@@ -287,7 +295,7 @@ window.addEventListener('DOMContentLoaded', () => {
 							<h3>Цена</h3>
 							<h3>КОЛИЧЕСТВО</h3>
 						</div>
-						<div class="right__price-center"><span class="right__price-value">${price} ₽</span>
+						<div class="right__price-center"><span class="right__price-value">${price} <div class="rub"></div> </span>
 							<div class="right__price-calculations">
 								<div class="right__price-minus"></div>
 								<div class="right__price-inp"><input type="text" name="price-inp" value="1" /></div>
@@ -421,90 +429,436 @@ window.addEventListener('DOMContentLoaded', () => {
 		// конец замены
 
 
-		if (menuGiftsWrap) {
-			menuGiftsWrap.innerHTML = '';
+		// if (menuGiftsWrap) {
+		// 	menuGiftsWrap.innerHTML = '';
 
-			data.gifts.forEach((obj) => {
+		// 	data.gifts.forEach((obj) => {
 
-				let hit;
-				if (obj.hit === true) {
-					hit = 'хит';
-				}
+		// 		let hit;
+		// 		if (obj.hit === true) {
+		// 			hit = 'хит';
+		// 		}
 
-				let discountPersent;
-				if (obj.discount === true) {
-					discountPersent = obj.discountPersent + '%';
-				}
+		// 		let discountPersent;
+		// 		if (obj.discount === true) {
+		// 			discountPersent = obj.discountPersent + '%';
+		// 		}
 
-				let pieceGoods;
-				if (obj.pieceGoods === true) {
-					pieceGoods = '/шт.'
+		// 		let pieceGoods;
+		// 		if (obj.pieceGoods === true) {
+		// 			pieceGoods = '/шт.'
+		// 		} else {
+		// 			pieceGoods = '';
+		// 		}
+
+		// 		let catalogHeight;
+		// 		if (obj.height !== false) {
+		// 			catalogHeight = obj.height;
+		// 		}
+
+		// 		let catalogWidth;
+		// 		if (obj.width !== false) {
+		// 			catalogWidth = obj.width;
+		// 		}
+		// 		let price;
+		// 		let rez;
+		// 		if (obj.discountPersent !== false) {
+		// 			rez = obj.price / 100 * obj.discountPersent;
+		// 			price = (obj.price - rez).toFixed(0);
+		// 		} else {
+		// 			price = obj.price;
+		// 		}
+
+		// 		let catalogItem = document.createElement('a');
+		// 		catalogItem.classList.add('catalog__item');
+		// 		catalogItem.href = `${obj.url}.html`;
+		// 		catalogItem.setAttribute('data-number', obj.id)
+		// 		catalogItem.innerHTML = `
+		// 		<div class="catalog__item-top">
+		// 			<h3 class="catalog__hit">${hit}</h3><h3 class="catalog__percent">${discountPersent}</h3><a class="catalog__item-top-link catalog__item-top-add show" href="#"><img src="static/images/general/heart.png" alt=""/></a><a class="catalog__item-top-link catalog__item-top-take hide" href="#"><img src="static/images/general/heartFull.png" alt=""/></a></div>
+		// 		<div
+		// 			class="catalog__item-img"><img src=${obj.photo} alt="${obj.name}" /></div>
+		// 	<div class="catalog__item-body">
+		// 		<h4 class="catalog__item-title">${obj.name}</h4>
+		// 		<span class="catalog__item-lable">${obj.price} <div class="rub"></div>
+		// 		${pieceGoods}</span>
+		// 		<span class="catalog__item-discount">${price} <div class="rub"></div> 
+		// 		${pieceGoods}</span>
+		// 	</div>
+		// 	<div class="catalog__masc">
+		// 		<div class="catalog__masc-wrap">
+		// 			<h4 class="catalog__masc-title">${obj.name}</h4>
+		// 			<span class="catalog__item-lable">${obj.price}  <div class="rub"></div>
+		// 			${pieceGoods}</span>
+		// 			<span class="catalog__item-discount">${price} <div class="rub"></div>
+		// 			${pieceGoods}</span>
+		// 			<p class="catalog__masc-height"><span>Высота: </span><span class="catalog__masc-height-value">${catalogHeight}</span> см</p>
+		// 			<p class="catalog__masc-width"><span>Ширина: </span><span class="catalog__masc-width-value">${catalogWidth}</span> см</p>
+		// 			<div class="catalog__masc-btn"><a class="catalog__masc-btn-js-2" href="basket.html" data-number = ${obj.id}>В корзину</a></div>
+		// 		</div>
+		// 	</div>
+		// 		`;
+		// 		menuGiftsWrap.append(catalogItem);
+
+
+		// 		if (obj.discountPersent !== false) {
+		// 			rez = obj.price / 100 * obj.discountPersent;
+		// 			price = (obj.price - rez).toFixed(0);
+		// 			catalogItem.setAttribute('data-price', price);
+		// 		} else {
+		// 			catalogItem.setAttribute('data-price', price);
+		// 		}
+
+		// 		catalogItem.setAttribute('data-hitValue', obj.hitValue);
+
+
+		// 		if (obj.discountPersent !== false) {
+		// 			catalogItem.setAttribute('data-discountPersent', obj.discountPersent);
+		// 		} else {
+		// 			catalogItem.setAttribute('data-discountPersent', 0);
+		// 		}
+
+		// 	})
+		// }
+
+		// // // Реализация корзины 1
+
+		let catalogMascBtnJs = document.querySelectorAll('.catalog__masc-btn-js');
+		let basket__wrap = document.querySelector('.basket__wrap');
+		let basketTableTbody = document.querySelector('.basket__table-tbody');
+
+		const newGoods = (id, count = 1) => ({
+			id: id,
+			count: count
+		});
+
+		// let currentCartCount = 0;
+		let countText = document.querySelector('.basket-value');
+
+		if (localStorage.getItem('goods') !== undefined && localStorage.getItem('goods') !== null) {
+			let arrayLC = JSON.parse(localStorage.getItem('goods'));
+			countText.textContent = (arrayLC.length);
+		}
+
+
+
+		catalogMascBtnJs.forEach(elem => {
+			elem.addEventListener('click', (e) => {
+				e.preventDefault();
+
+				let dataNumber = elem.getAttribute('data-number');
+				let newObjGoods = newGoods(dataNumber);
+
+				if (localStorage.getItem('goods') == undefined && localStorage.getItem('goods') == null) {
+					let goods = [];
+					goods = [...goods, newObjGoods];
+					localStorage.setItem('goods', JSON.stringify(goods));
+					countText.textContent = (goods.length);
 				} else {
-					pieceGoods = '';
-				}
+					let oldGoods = JSON.parse(localStorage.getItem('goods'));
+					let findIldItem = oldGoods.find(el => el.id == dataNumber);
 
-				let catalogHeight;
-				if (obj.height !== false) {
-					catalogHeight = obj.height;
-				}
-
-				let catalogWidth;
-				if (obj.width !== false) {
-					catalogWidth = obj.width;
-				}
-				let price;
-				let rez;
-				if (obj.discountPersent !== false) {
-					rez = obj.price / 100 * obj.discountPersent;
-					price = (obj.price - rez).toFixed(0);
-				} else {
-					price = obj.price;
-				}
-
-				let catalogItem = document.createElement('a');
-				catalogItem.classList.add('catalog__item');
-				catalogItem.href = `${obj.url}.html`;
-				catalogItem.innerHTML = `
-				<div class="catalog__item-top">
-					<h3 class="catalog__hit">${hit}</h3><h3 class="catalog__percent">${discountPersent}</h3><a class="catalog__item-top-link catalog__item-top-add show" href="#"><img src="static/images/general/heart.png" alt=""/></a><a class="catalog__item-top-link catalog__item-top-take hide" href="#"><img src="static/images/general/heartFull.png" alt=""/></a></div>
-				<div
-					class="catalog__item-img"><img src=${obj.photo} alt="${obj.name}" /></div>
-			<div class="catalog__item-body">
-				<h4 class="catalog__item-title">${obj.name}</h4>
-				<span class="catalog__item-lable">${obj.price} ₽ ${pieceGoods}</span>
-				<span class="catalog__item-discount">${price} ₽ ${pieceGoods}</span>
-			</div>
-			<div class="catalog__masc">
-				<div class="catalog__masc-wrap">
-					<h4 class="catalog__masc-title">${obj.name}</h4>
-					<span class="catalog__item-lable">${obj.price} ₽ ${pieceGoods}</span>
-					<span class="catalog__item-discount">${price} ₽ ${pieceGoods}</span>
-					<p class="catalog__masc-height"><span>Высота: </span><span class="catalog__masc-height-value">${catalogHeight}</span> см</p>
-					<p class="catalog__masc-width"><span>Ширина: </span><span class="catalog__masc-width-value">${catalogWidth}</span> см</p>
-					<div class="catalog__masc-btn"><a href="#">В корзину</a></div>
-				</div>
-			</div>
-				`;
-				menuGiftsWrap.append(catalogItem);
-
-				if (obj.discountPersent !== false) {
-					rez = obj.price / 100 * obj.discountPersent;
-					price = (obj.price - rez).toFixed(0);
-					catalogItem.setAttribute('data-price', price);
-				} else {
-					catalogItem.setAttribute('data-price', price);
-				}
-
-				catalogItem.setAttribute('data-hitValue', obj.hitValue);
-
-				if (obj.discountPersent !== false) {
-					catalogItem.setAttribute('data-discountPersent', obj.discountPersent);
-				} else {
-					catalogItem.setAttribute('data-discountPersent', 0);
+					if (findIldItem == undefined) {
+						oldGoods = [...oldGoods, newObjGoods];
+					} else {
+						oldGoods.filter((item) => {
+							if (item.id == dataNumber) {
+								item.count = item.count + 1;
+							}
+							return item;
+						})
+					}
+					localStorage.setItem('goods', JSON.stringify(oldGoods));
+					countText.textContent = (oldGoods.length)
 				}
 
 			})
+		})
+
+
+
+
+		if (basket__wrap) {
+			let dataArr = JSON.parse(localStorage.getItem('goods'))
+			let arr = [];
+
+			arr = data.people.filter(el => (dataArr.includes(el.id)))
+
+			dataArr.forEach(elem => {
+				let div = document.createElement('tr');
+				div.classList.add('myTr');
+				let myPrice;
+				let rez;
+
+				if (data.people[elem.id - 1].discountPersent != false) {
+					rez = data.people[elem.id - 1].price / 100 * data.people[elem.id - 1].discountPersent;
+					myPrice = (data.people[elem.id - 1].price - rez).toFixed(0);
+
+				} else {
+					myPrice = data.people[elem.id - 1].price;
+				}
+
+				div.innerHTML = `
+				<td>
+					<div class="basket__table-wrap-name">${data.people[elem.id - 1].name}</div>
+				</td>
+				<td class="basket__td-flex">
+					<div class="myMinus" data-value-minus = ${data.people[elem.id - 1].id}></div>
+					<div class="basket__table-wrap-block myCount">${elem.count}</div>
+					<div class="myPlus" data-value-plus = ${data.people[elem.id - 1].id}></div>
+				</td>
+				<td>
+					<div class="ArrMyPrice">${myPrice * elem.count}</div>
+				</td>
+				<td>
+					<div class="basket__table-wrap-close">✖</div>
+				</td>
+						`;
+				basketTableTbody.append(div);
+
+				let myPlus = document.querySelectorAll('.myPlus');
+				let myMinus = document.querySelectorAll('.myMinus');
+				let myCount = document.querySelectorAll('.myCount');
+				let ArrMyPrice = document.querySelectorAll('.ArrMyPrice');
+				let myArr2 = JSON.parse(localStorage.getItem('goods'));
+				let rez2;
+				let myPrice2;
+
+				myPlus.forEach((elem, i) => {
+					elem.addEventListener('click', (e) => {
+
+						if (e.target.getAttribute('data-value-plus') == myArr2[i].id) {
+							myArr2[i].count++;
+						}
+
+						localStorage.setItem('goods', JSON.stringify(myArr2));
+						myCount[i].textContent = myArr2[i].count;
+
+						if (data.people[i].discountPersent != false) {
+							rez2 = data.people[i].price / 100 * data.people[i].discountPersent;
+							myPrice2 = (data.people[i].price - rez2).toFixed(0);
+
+						} else {
+							myPrice2 = data.people[i].price;
+						}
+
+						ArrMyPrice[i].textContent = myPrice2 * myArr2[i].count;
+
+						recalculationOfTheFullAmount();
+					})
+				})
+
+				myMinus.forEach((elem, i) => {
+					elem.addEventListener('click', (e) => {
+
+						if (e.target.getAttribute('data-value-minus') == myArr2[i].id && myArr2[i].count >= 2) {
+							myArr2[i].count--;
+						}
+
+						localStorage.setItem('goods', JSON.stringify(myArr2));
+						myCount[i].textContent = myArr2[i].count;
+
+						if (data.people[i].discountPersent != false) {
+							rez2 = data.people[i].price / 100 * data.people[i].discountPersent;
+							myPrice2 = (data.people[i].price - rez2).toFixed(0);
+
+						} else {
+							myPrice2 = data.people[i].price;
+						}
+
+						ArrMyPrice[i].textContent = myPrice2 * myArr2[i].count;
+
+						recalculationOfTheFullAmount();
+					})
+				})
+
+			})
+
+
+
+			let basketFullPriceBlock = document.querySelector('.basket__full-price-block');
+
+			function recalculationOfTheFullAmount() {
+
+				let fullPriceSum = 0;
+				let ArrMyPrice = document.querySelectorAll('.ArrMyPrice');
+
+				ArrMyPrice.forEach(elem => {
+					fullPriceSum += +elem.innerHTML;
+				})
+
+
+				if (basketFullPriceBlock) {
+					basketFullPriceBlock.innerHTML = `Общая сумма: ${fullPriceSum}`;
+					basketFullPriceBlock.classList.add('rub');
+
+				}
+
+			}
+
+			recalculationOfTheFullAmount();
+
+			let btn = document.createElement('button');
+			btn.setAttribute("type", "submit");
+			btn.innerHTML = 'Заказать';
+			btn.classList.add('basket__wrap-btn');
+			basketFullPriceBlock.after(btn);
+
+
 		}
+
+		let basketTableWrapClose = document.querySelectorAll('.basket__table-wrap-close');
+		let myArr2 = JSON.parse(localStorage.getItem('goods'));
+
+		function deletingACartItem() {
+
+			basketTableWrapClose.forEach((elem, i) => {
+				elem.addEventListener('click', (e) => {
+
+					myArr2.splice(i, 1);
+					localStorage.setItem('goods', JSON.stringify(myArr2));
+
+					let elems = document.querySelectorAll('.basket__table-tbody .myTr');
+
+					elems[i].remove();
+					recalculationOfTheFullAmount();
+
+				})
+			})
+
+		}
+
+		deletingACartItem();
+
+		// // Конец корзины 1
+
+		// // // Реализация корзины 2
+
+		// let catalogMascBtnJs2 = document.querySelectorAll('.catalog__masc-btn-js-2');
+
+		// const newGoods2 = (id, count = 1) => ({
+		// 	id: id,
+		// 	count: count
+		// });
+
+		// // let currentCartCount = 0;
+		// // let countText = document.querySelector('.basket-value');
+
+		// if (localStorage.getItem('goods2') !== undefined && localStorage.getItem('goods2') !== null) {
+		// 	let arrayLC2 = JSON.parse(localStorage.getItem('goods2'));
+		// 	countText.textContent = (arrayLC2.length);
+		// }
+
+
+
+		// catalogMascBtnJs2.forEach(elem => {
+		// 	elem.addEventListener('click', (e) => {
+		// 		e.preventDefault();
+
+		// 		let dataNumber2 = elem.getAttribute('data-number');
+		// 		let newObjGoods2 = newGoods2(dataNumber2);
+
+		// 		if (localStorage.getItem('goods2') == undefined && localStorage.getItem('goods2') == null) {
+		// 			let goods2 = [];
+		// 			goods2 = [...goods2, newObjGoods2];
+		// 			localStorage.setItem('goods2', JSON.stringify(goods2));
+		// 			countText.textContent = (goods2.length);
+		// 		} else {
+		// 			let oldGoods2 = JSON.parse(localStorage.getItem('goods2'));
+		// 			let findIldItem2 = oldGoods2.find(el => el.id == dataNumber2);
+
+		// 			if (findIldItem2 == undefined) {
+		// 				oldGoods2 = [...oldGoods2, newObjGoods2];
+		// 			} else {
+		// 				oldGoods2.filter((item) => {
+		// 					if (item.id == dataNumber2) {
+		// 						item.count = item.count + 1;
+		// 					}
+		// 					return item;
+		// 				})
+		// 			}
+		// 			localStorage.setItem('goods2', JSON.stringify(oldGoods2));
+		// 			countText.textContent = (oldGoods2.length)
+		// 		}
+
+		// 	})
+		// })
+
+		// // let basket__wrap = document.querySelector('.basket__wrap');
+
+		// if (basket__wrap) {
+		// 	let dataArr2 = JSON.parse(localStorage.getItem('goods2'))
+		// 	let arr2 = [];
+
+		// 	arr2 = data.gifts.filter(el => (dataArr2.includes(el.id)))
+
+		// 	dataArr2.forEach(elem => {
+		// 		let div2 = document.createElement('div');
+		// 		let myPrice3;
+		// 		let rez3;
+
+		// 		if (data.gifts[elem.id - 1].discountPersent != false) {
+		// 			re2 = data.gifts[elem.id - 1].price / 100 * data.people[elem.id - 1].discountPersent;
+		// 			myPrice3 = (data.gifts[elem.id - 1].price - rez3).toFixed(0);
+
+		// 		} else {
+		// 			myPrice3 = data.gifts[elem.id - 1].price;
+		// 		}
+
+
+		// 		div2.innerHTML = `
+		// 					<div>${data.gifts[elem.id - 1].name}</div>
+		// 					<div class="myCount-2">${elem.count}</div>
+		// 					<div class="ArrMyPrice-2">${myPrice3 * elem.count}</div>
+		// 					<div class="myPlus-2" data-value-plus = ${elem.id}>+</div>
+		// 				`;
+		// 		basket__wrap.append(div2);
+
+		// 		let myPlus2 = document.querySelectorAll('.myPlus-2');
+		// 		let myCount2 = document.querySelectorAll('.myCount-2');
+		// 		let ArrMyPrice2 = document.querySelectorAll('.ArrMyPrice-2');
+		// 		let myArr2 = JSON.parse(localStorage.getItem('goods2'));
+		// 		let rez2;
+		// 		let myPrice2;
+
+
+
+		// 		myPlus2.forEach((elem, i) => {
+		// 			elem.addEventListener('click', (e) => {
+
+
+		// 				if (e.target.getAttribute('data-value-plus') == myArr2[i].id) {
+		// 					myArr2[i].count++;
+		// 				}
+
+		// 				localStorage.setItem('goods2', JSON.stringify(myArr2));
+		// 				myCount2[i].textContent = myArr2[i].count;
+
+		// 				console.log(data.gifts[i])
+
+		// 				if (data.gifts[i].discountPersent != false) {
+		// 					rez2 = data.gifts[i].price / 100 * data.gifts[i].discountPersent;
+		// 					myPrice2 = (data.gifts[i].price - rez2).toFixed(0);
+
+		// 				} else {
+		// 					myPrice2 = data.gifts[i].price;
+		// 				}
+
+
+		// 				ArrMyPrice2[i].textContent = myPrice2 * myArr2[i].count;
+
+
+
+		// 			})
+		// 		})
+
+		// 	})
+
+		// }
+
+		// // Конец корзины 2
+
+
 
 
 		let catalogPercent = document.querySelectorAll('.catalog__percent');

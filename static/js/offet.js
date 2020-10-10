@@ -49,5 +49,7 @@ myOffet('.giftsBear80');
 myOffet('.giftsMersi');
 myOffet('.giftsRafaelo');
 myOffet('.myFlowers');
+myOffet('.likes');
+myOffet('.basket');
 
 	// Конец реализации отступа блока от шапки

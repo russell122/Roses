@@ -189,6 +189,7 @@
     ],
     "gifts": [
         {
+            "id": 1,
             "hit": false,
             "hitValue": 2,
             "photo": "https://lavkaroz.ru/files/images/cache/Goods/Goods47/40333ae71e-1_173x173.jpg",
@@ -203,6 +204,7 @@
             "url": "giftsRafaelo"
         },
         {
+            "id": 2,
             "hit": false,
             "hitValue": 1,
             "photo": "https://lavkaroz.ru/files/images/cache/Goods/Goods95/f99bcc4705-1_173x173.jpg",
@@ -217,6 +219,7 @@
             "url": "giftsMersi"
         },
         {
+            "id": 3,
             "hit": false,
             "hitValue": 3,
             "photo": "https://lavkaroz.ru/files/images/cache/Goods/Goods44/1a9f129ec5-1_173x173.jpg",
@@ -231,6 +234,7 @@
             "url": "giftsBear25"
         },
         {
+            "id": 4,
             "hit": false,
             "hitValue": 1,
             "photo": "https://lavkaroz.ru/files/images/cache/Goods/Goods160/82610bebd4-1_173x173.png",
@@ -245,6 +249,7 @@
             "url": "giftsBalloonsWithHelium10"
         },
         {
+            "id": 5,
             "hit": false,
             "hitValue": 2,
             "photo": "https://lavkaroz.ru/files/images/cache/Goods/Goods161/b2d37b1555-1_173x173.jpg",
@@ -259,6 +264,7 @@
             "url": "giftsBalloonsWithHeliumBlackAndWhite10"
         },
         {
+            "id": 6,
             "hit": false,
             "hitValue": 3,
             "photo": "https://lavkaroz.ru/files/images/cache/Goods/Goods162/861d50b396-1_173x173.jpg",
@@ -273,6 +279,7 @@
             "url": "giftsBalloonsWithHeliumDecilateMix10"
         },
         {
+            "id": 7,
             "hit": false,
             "hitValue": 1,
             "photo": "https://lavkaroz.ru/files/images/cache/Goods/Goods45/fab0439bc2-1_173x173.jpg",
@@ -287,6 +294,7 @@
             "url": "giftsBear50"
         },
         {
+            "id": 8,
             "hit": false,
             "hitValue": 1,
             "photo": "https://lavkaroz.ru/files/images/cache/Goods/Goods46/7ae54954d7-1_173x173.jpg",
