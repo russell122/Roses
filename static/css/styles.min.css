@@ -2248,6 +2248,8 @@ button {
   height: calc(var(--vh, 1vh) * 100); }
   .top__slider .swiper-slide {
     height: 100%; }
+    .top__slider .swiper-slide source {
+      width: 100%; }
     .top__slider .swiper-slide img {
       position: absolute;
       width: 100%;
@@ -3840,4 +3842,3 @@ button {
 .modal.open .modal__content {
   top: 0;
   opacity: 1; }
-
