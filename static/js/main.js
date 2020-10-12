@@ -598,6 +598,7 @@ window.addEventListener('DOMContentLoaded', () => {
 					myPrice = data.people[elem.id - 1].price;
 				}
 
+
 				div.innerHTML = `
 				<td>
 					<div class="basket__table-wrap-name">${data.people[elem.id - 1].name}</div>
@@ -610,10 +611,11 @@ window.addEventListener('DOMContentLoaded', () => {
 				<td>
 					<div class="ArrMyPrice">${myPrice * elem.count}</div>
 				</td>
-				<td>
-					<div class="basket__table-wrap-close">✖</div>
+				<td class="basket__table-wrap-close" data-close-value="${data.people[elem.id - 1].id}">
+					<div>✖</div>
 				</td>
 						`;
+				div.setAttribute('data-close-value', data.people[elem.id - 1].id)
 				basketTableTbody.append(div);
 
 				let myPlus = document.querySelectorAll('.myPlus');
@@ -709,18 +711,32 @@ window.addEventListener('DOMContentLoaded', () => {
 
 		let basketTableWrapClose = document.querySelectorAll('.basket__table-wrap-close');
 		let myArr2 = JSON.parse(localStorage.getItem('goods'));
+		let myTrS = document.querySelectorAll('.basket__table-tbody .myTr');
+
+
 
 		function deletingACartItem() {
 
 			basketTableWrapClose.forEach((elem, i) => {
+
 				elem.addEventListener('click', (e) => {
 
-					myArr2.splice(i, 1);
-					localStorage.setItem('goods', JSON.stringify(myArr2));
 
-					let elems = document.querySelectorAll('.basket__table-tbody .myTr');
+					if (elem.getAttribute('data-close-value') === myTrS[i].getAttribute('data-close-value')) {
 
-					elems[i].remove();
+						myArr2.forEach((el, i) => {
+
+							if (elem.getAttribute('data-close-value') === el.id) {
+								myArr2.splice(i, 1)
+								localStorage.setItem('goods', JSON.stringify(myArr2));
+								elem.parentElement.remove();
+								countText.textContent = (myArr2.length);
+							}
+						})
+
+					}
+
+
 					recalculationOfTheFullAmount();
 
 				})
