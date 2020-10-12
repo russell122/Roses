@@ -1,574 +1,520 @@
 <!DOCTYPE html>
 <html lang="ru-RU">
-
-<head>
-  <meta charset="utf-8">
-  <title>Roses</title>
-  <!--[if IE]>
+  <head>
+    <meta charset="utf-8">
+    <title>Roses</title><!--[if IE]>
     <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="keywords" content="">
-  <link rel="stylesheet" rel="preload" type="text/css" href="static/css/styles.min.css">
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-  <!--[if lt IE 9]>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" type="text/css" href="static/css/styles.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"><!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script><![endif]-->
-</head>
-
-<body class="index-page">
-  <div class="wrapper">
-    <header class="header">
-      <div class="header__top">
-        <div class="container">
-          <div class="header__top-wrap">
-            <ul class="header__top-menu">
-              <li class="header__top-menu-list"><a class="header__top-menu-link" href="bigDelivery.html"
-                  title="Доставка и оплата" alt="Доставка и оплата">Доставка и оплата</a></li>
-              <li class="header__top-menu-list"><a class="header__top-menu-link" href="bigReviews.html">Отзывы</a></li>
-              <li class="header__top-menu-list"><a class="header__top-menu-link" href="bigBlog.html">Блог и новости</a>
-              </li>
-              <li class="header__top-menu-list"><a class="header__top-menu-link" href="bigAboutUs.html">О компании</a>
-              </li>
-              <li class="header__top-menu-list"><a class="header__top-menu-link" href="bigContacts.html">Контакты</a>
-              </li>
-              <li class="header__top-menu-list"><a class="header__top-menu-link" href="bigWholesale.html">Оптовая
-                  продажа</a></li>
-            </ul>
-            <div class="header__top-info"><a class="header__top-info-mibile" href="tel:77777777">
-                <svg class="svg-sprite-icon icon-phone">
-                  <use xlink:href="static/images/svg/symbol/sprite.svg#phone"></use>
-                </svg><span>8 800 111 66 99</span></a>
-              <div class="header__top-info-time">
-                <svg class="svg-sprite-icon icon-time">
-                  <use xlink:href="static/images/svg/symbol/sprite.svg#time"></use>
-                </svg><span>09:00 — 21:00</span>
-              </div>
-            </div><a class="header__top-personalArea" href="#">
-              <svg class="svg-sprite-icon icon-user">
-                <use xlink:href="static/images/svg/symbol/sprite.svg#user"></use>
-              </svg><span>Личный кабинет</span></a>
-          </div>
-        </div>
-      </div>
-      <div class="header__block">
-        <div class="container">
-          <div class="header__block-wrap">
-            <div class="header__block-smallArea"><a class="header__top-personalArea" href="#">
+  </head>
+  <body class="index-page">
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__top">
+          <div class="container">
+            <div class="header__top-wrap">
+              <ul class="header__top-menu">
+                <li class="header__top-menu-list"><a class="header__top-menu-link" href="bigDelivery.html" title="Доставка и оплата" alt="Доставка и оплата">Доставка и оплата</a></li>
+                <li class="header__top-menu-list"><a class="header__top-menu-link" href="bigReviews.html">Отзывы</a></li>
+                <li class="header__top-menu-list"><a class="header__top-menu-link" href="bigBlog.html">Блог и новости</a></li>
+                <li class="header__top-menu-list"><a class="header__top-menu-link" href="bigAboutUs.html">О компании</a></li>
+                <li class="header__top-menu-list"><a class="header__top-menu-link" href="bigContacts.html">Контакты</a></li>
+                <li class="header__top-menu-list"><a class="header__top-menu-link" href="bigWholesale.html">Оптовая продажа</a></li>
+              </ul>
+              <div class="header__top-info"><a class="header__top-info-mibile" href="tel:77777777">
+                  <svg class="svg-sprite-icon icon-phone">
+                    <use xlink:href="static/images/svg/symbol/sprite.svg#phone"></use>
+                  </svg><span>8 800 111 66 99</span></a>
+                <div class="header__top-info-time">
+                  <svg class="svg-sprite-icon icon-time">
+                    <use xlink:href="static/images/svg/symbol/sprite.svg#time"></use>
+                  </svg><span>09:00 — 21:00</span>
+                </div>
+              </div><a class="header__top-personalArea" href="#">
                 <svg class="svg-sprite-icon icon-user">
                   <use xlink:href="static/images/svg/symbol/sprite.svg#user"></use>
-                </svg></a></div><a class="header__block-logo" href="index.html">
-              <h2>Flower basket</h2>
-            </a>
-            <div class="header__burger"><span></span></div>
-            <ul class="header__block-menu">
-              <li class="header__block-menu-list header__block-menu-list-act"><a class="header__block-menu-link"
-                  href="#">Розы
-                  <svg class="svg-sprite-icon icon-down-arrow">
-                    <use xlink:href="static/images/svg/symbol/sprite.svg#down-arrow"></use>
-                  </svg></a>
-                <div class="header__block-menu-dropdown">
-                  <ul>
-                    <li><a href="myFlowers.html">Голландские розы</a></li>
-                    <li><a href="myFlowers.html">Местная роза</a></li>
-                    <li><a href="myFlowers.html">Кустовые розы</a></li>
-                    <li><a href="myFlowers.html">Пионовидные розы</a></li>
-                    <li><a href="myFlowers.html">Букеты 101 роза</a></li>
-                  </ul>
+                </svg><span>Личный кабинет</span></a>
+            </div>
+          </div>
+        </div>
+        <div class="header__block">
+          <div class="container">
+            <div class="header__block-wrap">
+              <div class="header__block-smallArea"><a class="header__top-personalArea" href="#">
+                  <svg class="svg-sprite-icon icon-user">
+                    <use xlink:href="static/images/svg/symbol/sprite.svg#user"></use>
+                  </svg></a></div><a class="header__block-logo" href="index.html">
+                <h2>Flower basket</h2></a>
+              <div class="header__burger"><span></span></div>
+              <ul class="header__block-menu">
+                <li class="header__block-menu-list header__block-menu-list-act"><a class="header__block-menu-link" href="#">Розы
+                    <svg class="svg-sprite-icon icon-down-arrow">
+                      <use xlink:href="static/images/svg/symbol/sprite.svg#down-arrow"></use>
+                    </svg></a>
+                  <div class="header__block-menu-dropdown">
+                    <ul>
+                      <li><a href="myFlowers.html">Голландские розы</a></li>
+                      <li><a href="myFlowers.html">Местная роза</a></li>
+                      <li><a href="myFlowers.html">Кустовые розы</a></li>
+                      <li><a href="myFlowers.html">Пионовидные розы</a></li>
+                      <li><a href="myFlowers.html">Букеты 101 роза</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="header__block-menu-list header__block-menu-list-act"><a class="header__block-menu-link" href="#">Цветы
+                    <svg class="svg-sprite-icon icon-down-arrow">
+                      <use xlink:href="static/images/svg/symbol/sprite.svg#down-arrow"></use>
+                    </svg></a>
+                  <div class="header__block-menu-dropdown">
+                    <ul>
+                      <li><a href="myFlowers.html">Хризантема</a></li>
+                      <li><a href="myFlowers.html">Альстромерия</a></li>
+                      <li><a href="myFlowers.html">Тюльпаны и Ирисы</a></li>
+                      <li><a href="myFlowers.html">Гербера</a></li>
+                      <li><a href="myFlowers.html">Коробки с цветами</a></li>
+                      <li><a href="myFlowers.html">Корзины с цветами</a></li>
+                      <li><a href="myFlowers.html">Лилия</a></li>
+                      <li><a href="myFlowers.html">Пионы</a></li>
+                      <li><a href="myFlowers.html">Эустома</a></li>
+                      <li><a href="myFlowers.html">Каллы</a></li>
+                      <li><a href="myFlowers.html">Маттиола</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="header__block-menu-list"><a class="header__block-menu-link" href="menuAuthorBouquet.html">Авторские букеты</a></li>
+                <li class="header__block-menu-list"><a class="header__block-menu-link" href="menuGifts.html">Подарки</a></li>
+                <div class="header__top-small">
+                  <div class="header__top-wrap">
+                    <ul class="header__top-menu">
+                      <li class="header__top-menu-list"><a class="header__top-menu-link" href="bigDelivery.html" title="Доставка и оплата" alt="Доставка и оплата">Доставка и оплата</a></li>
+                      <li class="header__top-menu-list"><a class="header__top-menu-link" href="bigReviews.html">Отзывы</a></li>
+                      <li class="header__top-menu-list"><a class="header__top-menu-link" href="bigBlog.html">Блог и новости</a></li>
+                      <li class="header__top-menu-list"><a class="header__top-menu-link" href="bigAboutUs.html">О компании</a></li>
+                      <li class="header__top-menu-list"><a class="header__top-menu-link" href="bigContacts.html">Контакты</a></li>
+                      <li class="header__top-menu-list"><a class="header__top-menu-link" href="bigWholesale.html">Оптовая продажа</a></li>
+                    </ul>
+                    <div class="header__top-info"><a class="header__top-info-mibile" href="tel:77777777">
+                        <svg class="svg-sprite-icon icon-phone">
+                          <use xlink:href="static/images/svg/symbol/sprite.svg#phone"></use>
+                        </svg><span>8 800 111 66 99</span></a>
+                      <div class="header__top-info-time">
+                        <svg class="svg-sprite-icon icon-time">
+                          <use xlink:href="static/images/svg/symbol/sprite.svg#time"></use>
+                        </svg><span>09:00 — 21:00</span>
+                      </div>
+                    </div><a class="header__top-personalArea" href="#">
+                      <svg class="svg-sprite-icon icon-user">
+                        <use xlink:href="static/images/svg/symbol/sprite.svg#user"></use>
+                      </svg><span>Личный кабинет</span></a>
+                  </div>
                 </div>
-              </li>
-              <li class="header__block-menu-list header__block-menu-list-act"><a class="header__block-menu-link"
-                  href="#">Цветы
-                  <svg class="svg-sprite-icon icon-down-arrow">
-                    <use xlink:href="static/images/svg/symbol/sprite.svg#down-arrow"></use>
-                  </svg></a>
-                <div class="header__block-menu-dropdown">
-                  <ul>
-                    <li><a href="myFlowers.html">Хризантема</a></li>
-                    <li><a href="myFlowers.html">Альстромерия</a></li>
-                    <li><a href="myFlowers.html">Тюльпаны и Ирисы</a></li>
-                    <li><a href="myFlowers.html">Гербера</a></li>
-                    <li><a href="myFlowers.html">Коробки с цветами</a></li>
-                    <li><a href="myFlowers.html">Корзины с цветами</a></li>
-                    <li><a href="myFlowers.html">Лилия</a></li>
-                    <li><a href="myFlowers.html">Пионы</a></li>
-                    <li><a href="myFlowers.html">Эустома</a></li>
-                    <li><a href="myFlowers.html">Каллы</a></li>
-                    <li><a href="myFlowers.html">Маттиола</a></li>
-                  </ul>
-                </div>
-              </li>
-              <li class="header__block-menu-list"><a class="header__block-menu-link"
-                  href="menuAuthorBouquet.html">Авторские букеты</a></li>
-              <li class="header__block-menu-list"><a class="header__block-menu-link" href="menuGifts.html">Подарки</a>
-              </li>
-              <div class="header__top-small">
-                <div class="header__top-wrap">
-                  <ul class="header__top-menu">
-                    <li class="header__top-menu-list"><a class="header__top-menu-link" href="bigDelivery.html"
-                        title="Доставка и оплата" alt="Доставка и оплата">Доставка и оплата</a></li>
-                    <li class="header__top-menu-list"><a class="header__top-menu-link" href="bigReviews.html">Отзывы</a>
-                    </li>
-                    <li class="header__top-menu-list"><a class="header__top-menu-link" href="bigBlog.html">Блог и
-                        новости</a></li>
-                    <li class="header__top-menu-list"><a class="header__top-menu-link" href="bigAboutUs.html">О
-                        компании</a></li>
-                    <li class="header__top-menu-list"><a class="header__top-menu-link"
-                        href="bigContacts.html">Контакты</a></li>
-                    <li class="header__top-menu-list"><a class="header__top-menu-link" href="bigWholesale.html">Оптовая
-                        продажа</a></li>
-                  </ul>
-                  <div class="header__top-info"><a class="header__top-info-mibile" href="tel:77777777">
-                      <svg class="svg-sprite-icon icon-phone">
-                        <use xlink:href="static/images/svg/symbol/sprite.svg#phone"></use>
-                      </svg><span>8 800 111 66 99</span></a>
-                    <div class="header__top-info-time">
-                      <svg class="svg-sprite-icon icon-time">
-                        <use xlink:href="static/images/svg/symbol/sprite.svg#time"></use>
-                      </svg><span>09:00 — 21:00</span>
+              </ul>
+              <div class="header__block-social"><a class="header__block-social-elem" href="likes.html">
+                  <div class="header__block-social-like">
+                    <svg class="svg-sprite-icon icon-heart">
+                      <use xlink:href="static/images/svg/symbol/sprite.svg#heart"></use>
+                    </svg><span class="lile-value">0</span>
+                  </div></a><a class="header__block-social-elem" href="basket.html">
+                  <div class="header__block-social-basket">
+                    <svg class="svg-sprite-icon icon-bag">
+                      <use xlink:href="static/images/svg/symbol/sprite.svg#bag"></use>
+                    </svg><span>Корзина</span><span class="basket-value">0</span>
+                  </div></a></div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="content">
+        <section class="swiper-container top__slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <picture>
+                <source srcset="static/images/general/header__bg1.webp" type="image/webp"><img src="static/images/general/header__bg1.jpg" alt="">
+              </picture>
+              <div class="swiper-slide-info"><span>Акция</span>
+                <h2>Бесплатная доставка цветов при заказе от 3000 руб.</h2>
+                <p>Акция действует только до 30 августа 2021 г.</p>
+                <div class="swiper-slide-info-btn"><a href="">ПОДРОБНЕЕ ОБ АКЦИИ</a></div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <picture>
+                <source srcset="static/images/general/header__bg2.webp" type="image/webp"><img src="static/images/general/header__bg2.jpg" alt="">
+              </picture>
+              <div class="swiper-slide-info"><span>Акция</span>
+                <h2>Бесплатная доставка цветов при заказе от 3000 руб.</h2>
+                <p>Акция действует только до 30 августа 2021 г.</p>
+                <div class="swiper-slide-info-btn"><a href="">ПОДРОБНЕЕ ОБ АКЦИИ</a></div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <picture>
+                <source srcset="static/images/general/header__bg3.webp" type="image/webp"><img src="static/images/general/header__bg3.jpg" alt="">
+              </picture>
+              <div class="swiper-slide-info"><span>Акция</span>
+                <h2>Бесплатная доставка цветов при заказе от 3000 руб.</h2>
+                <p>Акция действует только до 30 августа 2021 г.</p>
+                <div class="swiper-slide-info-btn"><a href="">ПОДРОБНЕЕ ОБ АКЦИИ</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </section>
+        <section class="products">
+          <div class="container">
+            <div class="products__wrap">
+              <div class="calculator">
+                <div class="calculator__wrap">
+                  <form class="calculator__form" action="" method="get">
+                    <div class="calculator__form-flowers">
+                      <select class="calculator__form-select" name="calculator__select">
+                        <option value="">Выберите цветы</option>
+                        <option value="1">Голландские розы</option>
+                        <option value="2">Местная роза</option>
+                        <option value="3">Пионовидные розы</option>
+                        <option value="4">Кустовые розы</option>
+                        <option value="5">Хризантема</option>
+                        <option value="6">Альстромерия</option>
+                        <option value="7">Гербера</option>
+                        <option value="8">Тюльпаны и Ирисы</option>
+                        <option value="9">Букеты 101 роза</option>
+                        <option value="10">Коробки с цветами</option>
+                        <option value="11">Пионы</option>
+                        <option value="12">Лилия</option>
+                        <option value="13">Корзины с цветами</option>
+                        <option value="14">Эустома</option>
+                        <option value="15">Каллы</option>
+                        <option value="16">Маттиола</option>
+                        <option value="17">Авторские букеты</option>
+                      </select>
                     </div>
-                  </div><a class="header__top-personalArea" href="#">
-                    <svg class="svg-sprite-icon icon-user">
-                      <use xlink:href="static/images/svg/symbol/sprite.svg#user"></use>
-                    </svg><span>Личный кабинет</span></a>
+                    <div class="calculator__form-price">
+                      <div class="calculator__form-price-inp">
+                        <div class="calculator__form-price-block">
+                          <input class="calculator__form-price-min" type="text" value="0" name="calculatorFormPriceMin">
+                          <div class="rub"></div>
+                          <input class="calculator__form-price-range-min" type="range" value="0" step="10" min="0" max="10000" name="calculatorFormPriceRangeMin">
+                        </div>
+                        <div class="inp-defice"></div>
+                        <div class="calculator__form-price-block">
+                          <input class="calculator__form-price-max" type="text" value="10000" name="calculatorFormPriceMax">
+                          <div class="rub"></div>
+                          <input class="calculator__form-price-range-max" type="range" value="10000" step="10" max="10000" name="calculatorFormPriceRangeMax">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="calculator__form-btn"><a href="#">Показать</a></div>
+                  </form>
                 </div>
               </div>
-            </ul>
-            <div class="header__block-social"><a class="header__block-social-elem" href="likes.html">
-                <div class="header__block-social-like">
-                  <svg class="svg-sprite-icon icon-heart">
-                    <use xlink:href="static/images/svg/symbol/sprite.svg#heart"></use>
-                  </svg><span class="lile-value">0</span>
-                </div>
-              </a><a class="header__block-social-elem" href="basket.html">
-                <div class="header__block-social-basket">
-                  <svg class="svg-sprite-icon icon-bag">
-                    <use xlink:href="static/images/svg/symbol/sprite.svg#bag"></use>
-                  </svg><span>Корзина</span><span class="basket-value">0</span>
-                </div>
-              </a></div>
-          </div>
-        </div>
-      </div>
-    </header>
-    <div class="content">
-      <section class="swiper-container top__slider">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide"><img src="static/images/general/header__bg3.jpg" alt="">
-            <div class="swiper-slide-info"><span>Акция</span>
-              <h2>Бесплатная доставка цветов при заказе от 3000 руб.</h2>
-              <p>Акция действует только до 30 августа 2021 г.</p>
-              <div class="swiper-slide-info-btn"><a href="">ПОДРОБНЕЕ ОБ АКЦИИ</a></div>
-            </div>
-          </div>
-          <div class="swiper-slide"><img src="static/images/general/header__bg2.jpg" alt="">
-            <div class="swiper-slide-info"><span>Акция</span>
-              <h2>Бесплатная доставка цветов при заказе от 3000 руб.</h2>
-              <p>Акция действует только до 30 августа 2021 г.</p>
-              <div class="swiper-slide-info-btn"><a href="">ПОДРОБНЕЕ ОБ АКЦИИ</a></div>
-            </div>
-          </div>
-          <div class="swiper-slide"><img src="static/images/general/header__bg1.jpg" alt="">
-            <div class="swiper-slide-info"><span>Акция</span>
-              <h2>Бесплатная доставка цветов при заказе от 3000 руб.</h2>
-              <p>Акция действует только до 30 августа 2021 г.</p>
-              <div class="swiper-slide-info-btn"><a href="">ПОДРОБНЕЕ ОБ АКЦИИ</a></div>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-pagination"></div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-      </section>
-      <section class="products">
-        <div class="container">
-          <div class="products__wrap">
-            <div class="calculator">
-              <div class="calculator__wrap">
-                <form class="calculator__form" action="" method="get">
-                  <div class="calculator__form-flowers">
-                    <select class="calculator__form-select" name="calculator__select">
-                      <option value="">Выберите цветы</option>
-                      <option value="1">Голландские розы</option>
-                      <option value="2">Местная роза</option>
-                      <option value="3">Пионовидные розы</option>
-                      <option value="4">Кустовые розы</option>
-                      <option value="5">Хризантема</option>
-                      <option value="6">Альстромерия</option>
-                      <option value="7">Гербера</option>
-                      <option value="8">Тюльпаны и Ирисы</option>
-                      <option value="9">Букеты 101 роза</option>
-                      <option value="10">Коробки с цветами</option>
-                      <option value="11">Пионы</option>
-                      <option value="12">Лилия</option>
-                      <option value="13">Корзины с цветами</option>
-                      <option value="14">Эустома</option>
-                      <option value="15">Каллы</option>
-                      <option value="16">Маттиола</option>
-                      <option value="17">Авторские букеты</option>
-                    </select>
-                  </div>
-                  <div class="calculator__form-price">
-                    <div class="calculator__form-price-inp">
-                      <div class="calculator__form-price-block">
-                        <input class="calculator__form-price-min" type="text" value="0" name="calculatorFormPriceMin">
-                        <div class="rub"></div>
-                        <input class="calculator__form-price-range-min" type="range" value="0" step="10" min="0"
-                          max="10000" name="calculatorFormPriceRangeMin">
-                      </div>
-                      <div class="inp-defice"></div>
-                      <div class="calculator__form-price-block">
-                        <input class="calculator__form-price-max" type="text" value="10000"
-                          name="calculatorFormPriceMax">
-                        <div class="rub"></div>
-                        <input class="calculator__form-price-range-max" type="range" value="10000" step="10" max="10000"
-                          name="calculatorFormPriceRangeMax">
-                      </div>
+              <div class="search">
+                <form class="search__form" action="" method="get">
+                  <div class="search__wrap">
+                    <div class="search__wrap-top">
+                      <input type="text" placeholder="Поиск по сайту" name="calculatorSearch">
+                      <div class="calculator__form-btn"><a href="#">Поиск</a></div>
                     </div>
                   </div>
-                  <div class="calculator__form-btn"><a href="#">Показать</a></div>
                 </form>
               </div>
             </div>
-            <div class="search">
-              <form class="search__form" action="" method="get">
-                <div class="search__wrap">
-                  <div class="search__wrap-top">
-                    <input type="text" placeholder="Поиск по сайту" name="calculatorSearch">
-                    <div class="calculator__form-btn"><a href="#">Поиск</a></div>
+            <div class="catalog">
+              <h1 class="catalog__title">Цветы и букеты с доставкой</h1>
+              <div class="catalog__wrap people__wrap">
+                <div class="catalog__item">
+                  <div class="catalog__item-top">
+                    <h3 class="catalog__hit">хит</h3>
+                    <div class="catalog__percent"></div><a class="catalog__item-top-link catalog__item-top-add show" href="#"><img src="static/images/general/heart.png" alt=""></a><a class="catalog__item-top-link catalog__item-top-take hide" href="#"><img src="static/images/general/heartFull.png" alt=""></a>
                   </div>
+                  <div class="catalog__item-img"><img src="static/images/content/catalog__img-1.jpg" alt=""></div>
+                  <div class="catalog__item-body">
+                    <h4 class="catalog__item-title">Букет «Классика»</h4><span class="catalog__item-lable">2000 ₽</span><span class="catalog__item-discount"></span>
+                  </div>
+                  <div class="catalog__masc">
+                    <div class="catalog__masc-wrap">
+                      <h4 class="catalog__masc-title">Букет «Классика»</h4>
+                      <p class="catalog__masc-lable">2000 ₽</p>
+                      <p class="catalog__masc-height"><span>Высота: </span><span class="catalog__masc-height-value">40 см</span></p>
+                      <p class="catalog__masc-width"><span>Ширина: </span><span class="catalog__masc-width-value">60 см</span></p>
+                      <div class="catalog__masc-btn"><a href="#">В корзину</a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="roseShop">
+          <div class="container">
+            <div class="roseShop__advantages">
+              <div class="roseShop__logo">
+                <h2 class="roseShop__title">Flower basket</h2>
+              </div>
+              <div class="roseShop__wrap">
+                <div class="roseShop__item">
+                  <svg class="svg-sprite-icon icon-roseShop-img-1">
+                    <use xlink:href="static/images/svg/symbol/sprite.svg#roseShop-img-1"></use>
+                  </svg>
+                  <p>Экспресс-доставка от 90 минут</p>
+                </div>
+                <div class="roseShop__item">
+                  <svg class="svg-sprite-icon icon-roseShop-img-2">
+                    <use xlink:href="static/images/svg/symbol/sprite.svg#roseShop-img-2"></use>
+                  </svg>
+                  <p>Низкие цены</p>
+                </div>
+                <div class="roseShop__item">
+                  <svg class="svg-sprite-icon icon-roseShop-img-3">
+                    <use xlink:href="static/images/svg/symbol/sprite.svg#roseShop-img-3"></use>
+                  </svg>
+                  <p>Каждый день поступление свежих цветов</p>
+                </div>
+              </div>
+              <div class="roseShop__body">
+                <h2 class="roseShop__title">Интернет-магазин цветов</h2>
+                <p class="roseShop__text">Интернет-магазин Flower basket — это всегда свежие цветы и оригинальные букеты. В наличии и на заказ: импортные розы, русские розы, кенийские розы, хризантемы, тюльпаны, ирисы. Все цветы оформлены в букеты или корзины. Доступен как самовывоз, так и доставка по Харькову. У нас Вы сможете купить цветы, как в розницу, так и оптом. Для оптовых покупателей мы разработали и подготовили взаимовыгодные условия работы.</p>
+                <p class="roseShop__text">Что может порадовать женщину больше, чем мужское внимание? А лучший признак внимания – это, конечно же, букет цветов. Стоит купить цветы, и благодаря красивому букету женщина может простить любой мужской поступок и забыть о любых неприятностях. Если Вы хотите порадовать любимую, мать, дочь, сотрудницу, или знакомую, наши флористы с удовольствием помогут Вам выбрать и купить цветы для нее. Основная часть наших растений – свежайшие голландские и эквадорские розы. Десятки сортов разных размеров и оттенков не оставят равнодушной ни одну представительницу прекрасного пола. Крупные импортные бутоны, мелкие кенийские розочки, или экономичные русские розы, классические бордовые, изысканные кремовые, или романтичные розовые цветы – выбор только за Вами. Если же Ваша дама сердца предпочитает другие растения, мы можем предложить Вам букет из ромашек, ирисов, или тюльпанов разных оттенков.</p>
+                <p class="roseShop__text"> Если Вам нужно купить цветы на свадьбу, день рождения, или любой другой праздник, в большом количестве, обратите внимание на наши оптовые предложения.  Не уходя с рабочего места, Вы можете выбрать подходящий букет и принести море радости Вашему объекту внимания.</p>
+              </div>
+            </div>
+            <div class="roseShop__delivery">
+              <h2 class="roseShop__title">Доставка цветов в Харькове</h2>
+              <p class="roseShop__text"> Хотите сделать сюрприз или совсем нет времени забрать цветы самостоятельно? Это не проблема, Вам отлично подойдет наш сервис доставки. Доставка цветов доступна по Харькову и пригороду Харькова. По желанию клиента, к цветам прилагается сопроводительная записка, текст которой согласовывается заранее. Мы предлагаем доставку цветов.</p>
+              <p class="roseShop__text"> После оформления заказа с Вами свяжется наш менеджер и уточнит все моменты, связанные с доставкой и оплатой товара.</p>
+              <p class="roseShop__text"> Наш интернет магазин предлагает различные способы оплаты заказа:</p>
+              <ul class="roseShop__list">
+                <li class="roseShop__list-elem">Наличный расчет — оплата в магазине;</li>
+                <li class="roseShop__list-elem">Безналичный расчет — оплата пластиковыми картами, электронными деньгами.</li>
+                <li class="roseShop__list-elem">Оплата курьеру наличными</li>
+              </ul>
+              <p class="roseShop__text">   Не знаете, какие цветы выбрать? Свяжитесь с нашим менеджером, с помощью опытного флориста Вы подберете букет и купите цветы, которые подойдут именно Вам. Мы дорожим мнением своих клиентов. Поэтому Вы можете не сомневаться, что оказанные нами услуги будут самого высокого качества. Желаем приятных покупок с интернет магазином цветов — Flower basket.</p>
+            </div>
+          </div>
+        </section>
+        <section class="reviews">
+          <div class="container">
+            <h2 class="reviews__title">Отзывы</h2>
+            <div class="reviews__slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="reviews__slide-wrap">
+                    <div class="reviews__slide-body">
+                      <div class="reviews__slide-body-top">
+                        <h4>Ирина</h4>
+                        <div class="star">★ ★ ★ ★ ★</div>
+                      </div>
+                      <div class="reviews__slide-body-review">
+                        <p>Заказывала букет 25 хризантем микс, понравилось, что в каталоге такой яркий насыщенный цветной букет . Букет доставили вовремя, ни одного подвявшего или осыпавшегося цветка, в этом отношении очень порадовало. Небольшой минус, что фактически: белые хризантемки составили процентов 50 композиции. Но тем неменее ставлю 5, т .к. заказ был сделан всего за пару часов до мероприятия.</p>
+                        <p>Заказывала букет 25 хризантем микс, понравилось, что в каталоге такой яркий насыщенный цветной букет . Букет доставили вовремя, ни одного подвявшего или осыпавшегося цветка, в этом отношении очень порадовало. Небольшой минус, что фактически: белые хризантемки составили процентов 50 композиции. Но тем неменее ставлю 5, т .к. заказ был сделан всего за пару часов до мероприятия.</p>
+                      </div>
+                      <div class="reviews__slide-body-data">
+                        <p>19.06.2020</p>
+                      </div>
+                    </div>
+                    <div class="reviews__slide-img">
+                      <div class="reviews__slide-img-delivery"><img src="static/images/content/reviews-img-1.jpg" alt="">
+                        <p>Доставленный</p>
+                      </div>
+                      <div class="reviews__slide-img-site"><img src="static/images/content/reviews-img-2.jpg" alt="">
+                        <p>На сайте</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="reviews__slide-wrap">
+                    <div class="reviews__slide-body">
+                      <div class="reviews__slide-body-top">
+                        <h4>Элина</h4>
+                        <div class="star">★ ★ ★ ★ ★</div>
+                      </div>
+                      <div class="reviews__slide-body-review">
+                        <p>Огромное спасибо за такие качественные свежие цветы! Покупали на ДР дочери. Она в восторге,стоят уже 10й день. Для меня ваш магазин был приятным открытием. Успехов и процветания!</p>
+                      </div>
+                      <div class="reviews__slide-body-data">
+                        <p>11.03.2020</p>
+                      </div>
+                    </div>
+                    <div class="reviews__slide-img">
+                      <div class="reviews__slide-img-delivery"><img src="static/images/content/reviews-img-3.jpg" alt="">
+                        <p>Доставленный</p>
+                      </div>
+                      <div class="reviews__slide-img-site"><img src="static/images/content/reviews-img-4.jpg" alt="">
+                        <p>На сайте</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+            <div class="reviews__btns"><a class="reviews__btn reviews__btn-active" href="#">Добавить отзыв</a><a class="reviews__btn" href="#">Все отзывы</a></div>
+          </div>
+        </section>
+        <section class="blog">
+          <div class="container">
+            <h2 class="blog__title">Новости и блог</h2>
+            <div class="blog__wrap">
+              <div class="blog__column"><a class="blog__item" href="#">
+                  <div class="blog__item-img">
+                    <picture>
+                      <source srcset="static/images/content/news-blog-img-1.webp" type="image/webp"><img src="static/images/content/news-blog-img-1.jpg" alt="">
+                    </picture>
+                  </div>
+                  <div class="blog__item-body">
+                    <h3 class="blog__item-body-title">Калла в домашних условиях: советы по выращиванию</h3><span class="blog__item-body-date">18.09.2020</span>
+                    <p class="blog__item-body-descr">Калла – необычное и элегантное растение, очаровывающее с первого взгляда</p>
+                  </div></a></div>
+              <div class="blog__column"><a class="blog__item" href="#">
+                  <div class="blog__item-img">
+                    <picture>
+                      <source srcset="static/images/content/news-blog-img-2.webp" type="image/webp"><img src="static/images/content/news-blog-img-2.jpg" alt="">
+                    </picture>
+                  </div>
+                  <div class="blog__item-body">
+                    <h3 class="blog__item-body-title">Идеи для букета на свадьбу из кустовых роз</h3><span class="blog__item-body-date">22.08.2020</span>
+                    <p class="blog__item-body-descr">Эффектный свадебный букет из кустовых роз: идеи оформления</p>
+                  </div></a></div>
+              <div class="blog__column"><a class="blog__item" href="#">
+                  <div class="blog__item-img">
+                    <picture>
+                      <source srcset="static/images/content/news-blog-img-3.webp" type="image/webp"><img src="static/images/content/news-blog-img-3.jpg" alt="">
+                    </picture>
+                  </div>
+                  <div class="blog__item-body">
+                    <h3 class="blog__item-body-title">Букет цветов из тюльпанов – магия весны</h3><span class="blog__item-body-date">09.08.2020</span>
+                    <p class="blog__item-body-descr">История, этикет дарения и скрытый смысл цветка.</p>
+                  </div></a></div>
+            </div>
+          </div>
+        </section>
+        <section class="modal modal-lk" data-modal="lk" data-modal-info>
+          <div class="modal__block">
+            <div class="modal__content">
+              <form action="">
+                <div class="modal__close" data-close>×</div>
+                <div class="modal__title">Авторизация</div>
+                <div class="modal__login modal__authorization">
+                  <svg class="svg-sprite-icon icon-login">
+                    <use xlink:href="static/images/svg/symbol/sprite.svg#login"></use>
+                  </svg>
+                  <input type="email" name="login" placeholder="Введите ваш логин(email)" required>
+                </div>
+                <div class="modal__pass modal__authorization">
+                  <svg class="svg-sprite-icon icon-password">
+                    <use xlink:href="static/images/svg/symbol/sprite.svg#password"></use>
+                  </svg>
+                  <input type="password" name="password" placeholder="Введите ваш пароль" required>
+                </div><a class="modal__help" href="#">Забыли пароль?</a>
+                <div class="modal__btn-wrap">
+                  <button class="modal__btn">Войти</button>
+                  <p>Впервые на сайте? </p>
+                  <button class="modal__btn modal__btn-registration">Регистрация</button>
                 </div>
               </form>
             </div>
           </div>
-          <div class="catalog">
-            <h1 class="catalog__title">Цветы и букеты с доставкой</h1>
-            <div class="catalog__wrap people__wrap">
-              <div class="catalog__item">
-                <div class="catalog__item-top">
-                  <h3 class="catalog__hit">хит</h3>
-                  <div class="catalog__percent"></div><a class="catalog__item-top-link catalog__item-top-add show"
-                    href="#"><img src="static/images/general/heart.png" alt=""></a><a
-                    class="catalog__item-top-link catalog__item-top-take hide" href="#"><img
-                      src="static/images/general/heartFull.png" alt=""></a>
+        </section>
+        <section class="modal modal-registration" data-modal="reg" data-modal-info>
+          <div class="modal__block">
+            <div class="modal__content">
+              <form class="form-reg" action="">
+                <div class="modal__close" data-close>×</div>
+                <div class="modal__title">Регистрация</div>
+                <div class="modal__fio modal__authorization">
+                  <svg class="svg-sprite-icon icon-login">
+                    <use xlink:href="static/images/svg/symbol/sprite.svg#login"></use>
+                  </svg>
+                  <input type="text" name="fio" placeholder="Ваше ФИО" required>
                 </div>
-                <div class="catalog__item-img"><img src="static/images/content/catalog__img-1.jpg" alt=""></div>
-                <div class="catalog__item-body">
-                  <h4 class="catalog__item-title">Букет «Классика»</h4><span class="catalog__item-lable">2000
-                    ₽</span><span class="catalog__item-discount"></span>
+                <div class="modal__phone modal__authorization">
+                  <svg class="svg-sprite-icon icon-call">
+                    <use xlink:href="static/images/svg/symbol/sprite.svg#call"></use>
+                  </svg>
+                  <input class="modal__phone" type="text" name="phone" placeholder="+380(___) ___-__-__" required>
                 </div>
-                <div class="catalog__masc">
-                  <div class="catalog__masc-wrap">
-                    <h4 class="catalog__masc-title">Букет «Классика»</h4>
-                    <p class="catalog__masc-lable">2000 ₽</p>
-                    <p class="catalog__masc-height"><span>Высота: </span><span class="catalog__masc-height-value">40
-                        см</span></p>
-                    <p class="catalog__masc-width"><span>Ширина: </span><span class="catalog__masc-width-value">60
-                        см</span></p>
-                    <div class="catalog__masc-btn"><a href="#">В корзину</a></div>
-                  </div>
+                <div class="modal__email modal__authorization">
+                  <svg class="svg-sprite-icon icon-emailFull">
+                    <use xlink:href="static/images/svg/symbol/sprite.svg#emailFull"></use>
+                  </svg>
+                  <input type="email" name="email" placeholder="Введите ваш логин(email)" required>
                 </div>
-              </div>
+                <div class="modal__pussword modal__authorization">
+                  <svg class="svg-sprite-icon icon-password">
+                    <use xlink:href="static/images/svg/symbol/sprite.svg#password"></use>
+                  </svg>
+                  <input type="password" name="pass" placeholder="Введите пароль" required>
+                </div>
+                <div class="modal__pussword-confirmation modal__authorization">
+                  <svg class="svg-sprite-icon icon-password">
+                    <use xlink:href="static/images/svg/symbol/sprite.svg#password"></use>
+                  </svg>
+                  <input type="password" name="confirmationPass" placeholder="Повторите пароль" required>
+                </div>
+                <input class="custom-checkbox" type="checkbox" id="happy" name="happy" value="yes">
+                <label for="happy">Согласен на обработку персональных данных</label>
+                <div class="modal__btn-wrap">
+                  <button class="modal__btn modal__btn-reg">Отправить</button>
+                </div>
+              </form>
             </div>
           </div>
-        </div>
-      </section>
-      <section class="roseShop">
+        </section>
+        <section class="modal modal-recovery" data-modal="rec" data-modal-info>
+          <div class="modal__block">
+            <div class="modal__content">
+              <form class="form-recovery" action="">
+                <div class="modal__close" data-close>×</div>
+                <div class="modal__title">Восстановление пароля</div>
+                <div class="modal__email-recovery modal__authorization">
+                  <input type="email" name="email-rec" placeholder="E-mail" required>
+                </div>
+                <div class="modal__btn-wrap">
+                  <button class="modal__btn">Отправить</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
+      </div>
+      <section class="footer">
         <div class="container">
-          <div class="roseShop__advantages">
-            <div class="roseShop__logo">
-              <h2 class="roseShop__title">Flower basket</h2>
-            </div>
-            <div class="roseShop__wrap">
-              <div class="roseShop__item">
-                <svg class="svg-sprite-icon icon-roseShop-img-1">
-                  <use xlink:href="static/images/svg/symbol/sprite.svg#roseShop-img-1"></use>
-                </svg>
-                <p>Экспресс-доставка от 90 минут</p>
-              </div>
-              <div class="roseShop__item">
-                <svg class="svg-sprite-icon icon-roseShop-img-2">
-                  <use xlink:href="static/images/svg/symbol/sprite.svg#roseShop-img-2"></use>
-                </svg>
-                <p>Низкие цены</p>
-              </div>
-              <div class="roseShop__item">
-                <svg class="svg-sprite-icon icon-roseShop-img-3">
-                  <use xlink:href="static/images/svg/symbol/sprite.svg#roseShop-img-3"></use>
-                </svg>
-                <p>Каждый день поступление свежих цветов</p>
-              </div>
-            </div>
-            <div class="roseShop__body">
-              <h2 class="roseShop__title">Интернет-магазин цветов</h2>
-              <p class="roseShop__text">Интернет-магазин Flower basket — это всегда свежие цветы и оригинальные букеты.
-                В наличии и на заказ: импортные розы, русские розы, кенийские розы, хризантемы, тюльпаны, ирисы. Все
-                цветы оформлены в букеты или корзины. Доступен как самовывоз, так и доставка по Харькову. У нас Вы
-                сможете купить цветы, как в розницу, так и оптом. Для оптовых покупателей мы разработали и подготовили
-                взаимовыгодные условия работы.</p>
-              <p class="roseShop__text">Что может порадовать женщину больше, чем мужское внимание? А лучший признак
-                внимания – это, конечно же, букет цветов. Стоит купить цветы, и благодаря красивому букету женщина может
-                простить любой мужской поступок и забыть о любых неприятностях. Если Вы хотите порадовать любимую, мать,
-                дочь, сотрудницу, или знакомую, наши флористы с удовольствием помогут Вам выбрать и купить цветы для
-                нее. Основная часть наших растений – свежайшие голландские и эквадорские розы. Десятки сортов разных
-                размеров и оттенков не оставят равнодушной ни одну представительницу прекрасного пола. Крупные импортные
-                бутоны, мелкие кенийские розочки, или экономичные русские розы, классические бордовые, изысканные
-                кремовые, или романтичные розовые цветы – выбор только за Вами. Если же Ваша дама сердца предпочитает
-                другие растения, мы можем предложить Вам букет из ромашек, ирисов, или тюльпанов разных оттенков.</p>
-              <p class="roseShop__text"> Если Вам нужно купить цветы на свадьбу, день рождения, или любой другой
-                праздник, в большом количестве, обратите внимание на наши оптовые предложения. Не уходя с рабочего
-                места, Вы можете выбрать подходящий букет и принести море радости Вашему объекту внимания.</p>
-            </div>
-          </div>
-          <div class="roseShop__delivery">
-            <h2 class="roseShop__title">Доставка цветов в Харькове</h2>
-            <p class="roseShop__text"> Хотите сделать сюрприз или совсем нет времени забрать цветы самостоятельно? Это
-              не проблема, Вам отлично подойдет наш сервис доставки. Доставка цветов доступна по Харькову и пригороду
-              Харькова. По желанию клиента, к цветам прилагается сопроводительная записка, текст которой согласовывается
-              заранее. Мы предлагаем доставку цветов.</p>
-            <p class="roseShop__text"> После оформления заказа с Вами свяжется наш менеджер и уточнит все моменты,
-              связанные с доставкой и оплатой товара.</p>
-            <p class="roseShop__text"> Наш интернет магазин предлагает различные способы оплаты заказа:</p>
-            <ul class="roseShop__list">
-              <li class="roseShop__list-elem">Наличный расчет — оплата в магазине;</li>
-              <li class="roseShop__list-elem">Безналичный расчет — оплата пластиковыми картами, электронными деньгами.
-              </li>
-              <li class="roseShop__list-elem">Оплата курьеру наличными</li>
-            </ul>
-            <p class="roseShop__text"> Не знаете, какие цветы выбрать? Свяжитесь с нашим менеджером, с помощью опытного
-              флориста Вы подберете букет и купите цветы, которые подойдут именно Вам. Мы дорожим мнением своих
-              клиентов. Поэтому Вы можете не сомневаться, что оказанные нами услуги будут самого высокого качества.
-              Желаем приятных покупок с интернет магазином цветов — Flower basket.</p>
-          </div>
-        </div>
-      </section>
-      <section class="reviews">
-        <div class="container">
-          <h2 class="reviews__title">Отзывы</h2>
-          <div class="reviews__slider">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="reviews__slide-wrap">
-                  <div class="reviews__slide-body">
-                    <div class="reviews__slide-body-top">
-                      <h4>Ирина</h4>
-                      <div class="star">★ ★ ★ ★ ★</div>
-                    </div>
-                    <div class="reviews__slide-body-review">
-                      <p>Заказывала букет 25 хризантем микс, понравилось, что в каталоге такой яркий насыщенный цветной
-                        букет . Букет доставили вовремя, ни одного подвявшего или осыпавшегося цветка, в этом отношении
-                        очень порадовало. Небольшой минус, что фактически: белые хризантемки составили процентов 50
-                        композиции. Но тем неменее ставлю 5, т .к. заказ был сделан всего за пару часов до мероприятия.
-                      </p>
-                      <p>Заказывала букет 25 хризантем микс, понравилось, что в каталоге такой яркий насыщенный цветной
-                        букет . Букет доставили вовремя, ни одного подвявшего или осыпавшегося цветка, в этом отношении
-                        очень порадовало. Небольшой минус, что фактически: белые хризантемки составили процентов 50
-                        композиции. Но тем неменее ставлю 5, т .к. заказ был сделан всего за пару часов до мероприятия.
-                      </p>
-                    </div>
-                    <div class="reviews__slide-body-data">
-                      <p>19.06.2020</p>
-                    </div>
-                  </div>
-                  <div class="reviews__slide-img">
-                    <div class="reviews__slide-img-delivery"><img src="static/images/content/reviews-img-1.jpg" alt="">
-                      <p>Доставленный</p>
-                    </div>
-                    <div class="reviews__slide-img-site"><img src="static/images/content/reviews-img-2.jpg" alt="">
-                      <p>На сайте</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="reviews__slide-wrap">
-                  <div class="reviews__slide-body">
-                    <div class="reviews__slide-body-top">
-                      <h4>Элина</h4>
-                      <div class="star">★ ★ ★ ★ ★</div>
-                    </div>
-                    <div class="reviews__slide-body-review">
-                      <p>Огромное спасибо за такие качественные свежие цветы! Покупали на ДР дочери. Она в
-                        восторге,стоят уже 10й день. Для меня ваш магазин был приятным открытием. Успехов и процветания!
-                      </p>
-                    </div>
-                    <div class="reviews__slide-body-data">
-                      <p>11.03.2020</p>
-                    </div>
-                  </div>
-                  <div class="reviews__slide-img">
-                    <div class="reviews__slide-img-delivery"><img src="static/images/content/reviews-img-3.jpg" alt="">
-                      <p>Доставленный</p>
-                    </div>
-                    <div class="reviews__slide-img-site"><img src="static/images/content/reviews-img-4.jpg" alt="">
-                      <p>На сайте</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-          </div>
-          <div class="reviews__btns"><a class="reviews__btn reviews__btn-active" href="#">Добавить отзыв</a><a
-              class="reviews__btn" href="#">Все отзывы</a></div>
-        </div>
-      </section>
-      <section class="blog">
-        <div class="container">
-          <h2 class="blog__title">Новости и блог</h2>
-          <div class="blog__wrap">
-            <div class="blog__column"><a class="blog__item" href="#">
-                <div class="blog__item-img"><img src="static/images/content/news-blog-img-1.jpg" alt=""></div>
-                <div class="blog__item-body">
-                  <h3 class="blog__item-body-title">Калла в домашних условиях: советы по выращиванию</h3><span
-                    class="blog__item-body-date">18.09.2020</span>
-                  <p class="blog__item-body-descr">Калла – необычное и элегантное растение, очаровывающее с первого
-                    взгляда</p>
-                </div>
-              </a></div>
-            <div class="blog__column"><a class="blog__item" href="#">
-                <div class="blog__item-img"><img src="static/images/content/news-blog-img-2.jpg" alt=""></div>
-                <div class="blog__item-body">
-                  <h3 class="blog__item-body-title">Идеи для букета на свадьбу из кустовых роз</h3><span
-                    class="blog__item-body-date">22.08.2020</span>
-                  <p class="blog__item-body-descr">Эффектный свадебный букет из кустовых роз: идеи оформления</p>
-                </div>
-              </a></div>
-            <div class="blog__column"><a class="blog__item" href="#">
-                <div class="blog__item-img"><img src="static/images/content/news-blog-img-3.jpg" alt=""></div>
-                <div class="blog__item-body">
-                  <h3 class="blog__item-body-title">Букет цветов из тюльпанов – магия весны</h3><span
-                    class="blog__item-body-date">09.08.2020</span>
-                  <p class="blog__item-body-descr">История, этикет дарения и скрытый смысл цветка.</p>
-                </div>
-              </a></div>
-          </div>
-        </div>
-      </section>
-      <section class="modal modal-lk" data-modal="lk" data-modal-info>
-        <div class="modal__block">
-          <div class="modal__content">
-            <form action="">
-              <div class="modal__close" data-close>×</div>
-              <div class="modal__title">Авторизация</div>
-              <div class="modal__login modal__authorization">
-                <svg class="svg-sprite-icon icon-login">
-                  <use xlink:href="static/images/svg/symbol/sprite.svg#login"></use>
-                </svg>
-                <input type="email" name="login" placeholder="Введите ваш логин(email)" required>
-              </div>
-              <div class="modal__pass modal__authorization">
-                <svg class="svg-sprite-icon icon-password">
-                  <use xlink:href="static/images/svg/symbol/sprite.svg#password"></use>
-                </svg>
-                <input type="password" name="password" placeholder="Введите ваш пароль" required>
-              </div><a class="modal__help" href="#">Забыли пароль?</a>
-              <div class="modal__btn-wrap">
-                <button class="modal__btn">Войти</button>
-                <p>Впервые на сайте? </p>
-                <button class="modal__btn modal__btn-registration">Регистрация</button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </section>
-      <section class="modal modal-registration" data-modal="reg" data-modal-info>
-        <div class="modal__block">
-          <div class="modal__content">
-            <form class="form-reg" action="">
-              <div class="modal__close" data-close>×</div>
-              <div class="modal__title">Регистрация</div>
-              <div class="modal__fio modal__authorization">
-                <svg class="svg-sprite-icon icon-login">
-                  <use xlink:href="static/images/svg/symbol/sprite.svg#login"></use>
-                </svg>
-                <input type="text" name="fio" placeholder="Ваше ФИО" required>
-              </div>
-              <div class="modal__phone modal__authorization">
-                <svg class="svg-sprite-icon icon-call">
-                  <use xlink:href="static/images/svg/symbol/sprite.svg#call"></use>
-                </svg>
-                <input class="modal__phone" type="text" name="phone" placeholder="+380(___) ___-__-__" required>
-              </div>
-              <div class="modal__email modal__authorization">
-                <svg class="svg-sprite-icon icon-emailFull">
-                  <use xlink:href="static/images/svg/symbol/sprite.svg#emailFull"></use>
-                </svg>
-                <input type="email" name="email" placeholder="Введите ваш логин(email)" required>
-              </div>
-              <div class="modal__pussword modal__authorization">
-                <svg class="svg-sprite-icon icon-password">
-                  <use xlink:href="static/images/svg/symbol/sprite.svg#password"></use>
-                </svg>
-                <input type="password" name="pass" placeholder="Введите пароль" required>
-              </div>
-              <div class="modal__pussword-confirmation modal__authorization">
-                <svg class="svg-sprite-icon icon-password">
-                  <use xlink:href="static/images/svg/symbol/sprite.svg#password"></use>
-                </svg>
-                <input type="password" name="confirmationPass" placeholder="Повторите пароль" required>
-              </div>
-              <input class="custom-checkbox" type="checkbox" id="happy" name="happy" value="yes">
-              <label for="happy">Согласен на обработку персональных данных</label>
-              <div class="modal__btn-wrap">
-                <button class="modal__btn modal__btn-reg">Отправить</button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </section>
-      <section class="modal modal-recovery" data-modal="rec" data-modal-info>
-        <div class="modal__block">
-          <div class="modal__content">
-            <form class="form-recovery" action="">
-              <div class="modal__close" data-close>×</div>
-              <div class="modal__title">Восстановление пароля</div>
-              <div class="modal__email-recovery modal__authorization">
-                <input type="email" name="email-rec" placeholder="E-mail" required>
-              </div>
-              <div class="modal__btn-wrap">
-                <button class="modal__btn">Отправить</button>
-              </div>
-            </form>
+          <div class="footer__wrap"><a class="footer__logo" href="#">
+              <h2>Flower basket</h2></a>
+            <div class="footer__social"><a href="#">
+                <svg class="svg-sprite-icon icon-vk">
+                  <use xlink:href="static/images/svg/symbol/sprite.svg#vk"></use>
+                </svg></a><a href="#">
+                <svg class="svg-sprite-icon icon-facebook">
+                  <use xlink:href="static/images/svg/symbol/sprite.svg#facebook"></use>
+                </svg></a><a href="#">
+                <svg class="svg-sprite-icon icon-instagram">
+                  <use xlink:href="static/images/svg/symbol/sprite.svg#instagram"></use>
+                </svg></a></div>
+            <div class="footer__info"><a class="footer__info-mobile footer__info-setting" href="tel:77777777">
+                <svg class="svg-sprite-icon icon-phone">
+                  <use xlink:href="static/images/svg/symbol/sprite.svg#phone"></use>
+                </svg><span>8 800 111 66 99</span></a><a class="footer__info-mail footer__info-setting" href="mailto:info@gmail.com">
+                <svg class="svg-sprite-icon icon-mail">
+                  <use xlink:href="static/images/svg/symbol/sprite.svg#mail"></use>
+                </svg><span>info@gmail.com</span></a></div><a class="footer__created" href="#"><span>Некоммерческий проект</span></a>
           </div>
         </div>
       </section>
     </div>
-    <section class="footer">
-      <div class="container">
-        <div class="footer__wrap"><a class="footer__logo" href="#">
-            <h2>Flower basket</h2>
-          </a>
-          <div class="footer__social"><a href="#">
-              <svg class="svg-sprite-icon icon-vk">
-                <use xlink:href="static/images/svg/symbol/sprite.svg#vk"></use>
-              </svg></a><a href="#">
-              <svg class="svg-sprite-icon icon-facebook">
-                <use xlink:href="static/images/svg/symbol/sprite.svg#facebook"></use>
-              </svg></a><a href="#">
-              <svg class="svg-sprite-icon icon-instagram">
-                <use xlink:href="static/images/svg/symbol/sprite.svg#instagram"></use>
-              </svg></a></div>
-          <div class="footer__info"><a class="footer__info-mobile footer__info-setting" href="tel:77777777">
-              <svg class="svg-sprite-icon icon-phone">
-                <use xlink:href="static/images/svg/symbol/sprite.svg#phone"></use>
-              </svg><span>8 800 111 66 99</span></a><a class="footer__info-mail footer__info-setting"
-              href="mailto:info@gmail.com">
-              <svg class="svg-sprite-icon icon-mail">
-                <use xlink:href="static/images/svg/symbol/sprite.svg#mail"></use>
-              </svg><span>info@gmail.com</span></a></div><a class="footer__created" href="#"><span>Некоммерческий
-              проект</span></a>
-        </div>
-      </div>
-    </section>
-  </div>
-  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script src="static/js/jquery-3.3.1.min.js"></script>
-  <script src="static/js/libs.min.js"></script>
-  <script src="static/js/main.js"></script>
-  <script src="static/js/offet.js"></script>
-  <script src="static/js/modal.js"></script>
-</body>
-
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="static/js/jquery-3.3.1.min.js"></script>
+    <script src="static/js/libs.min.js"></script>
+    <script src="static/js/main.js"></script>
+    <script src="static/js/offet.js"></script>
+    <script src="static/js/modal.js"></script>
+  </body>
 </html>
