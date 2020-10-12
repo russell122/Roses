@@ -371,7 +371,7 @@ window.addEventListener('DOMContentLoaded', () => {
 		let num;
 
 		if (rightPriceValue) {
-			num = +rightPriceValue.innerHTML.replace(/\ ₽/, "");
+			num = +rightPriceValue.innerHTML.split(' ')[0];
 		}
 
 		if (rightPriceInp) {
