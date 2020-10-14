@@ -2,6 +2,7 @@
     "people": [
         {
             "id": 1,
+            "affiliation": 2,
             "hit": false,
             "hitValue": 2,
             "photo": "https://lavkaroz.ru/files/images/cache/Goods/Goods101/544279f578-2_173x173.jpg",
@@ -24,6 +25,7 @@
         },
         {
             "id": 2,
+            "affiliation": 1,
             "hit": false,
             "hitValue": 2,
             "photo": "https://lavkaroz.ru/files/images/cache/Goods/Goods10/915129ffe5-3_173x173.jpg",
@@ -46,6 +48,7 @@
         },
         {
             "id": 3,
+            "affiliation": 2,
             "hit": true,
             "hitValue": 1,
             "photo": "https://lavkaroz.ru/files/images/cache/Goods/Goods2/18e97e63dd-1_173x173.jpg",
@@ -70,6 +73,7 @@
         },
         {
             "id": 4,
+            "affiliation": 1,
             "hit": true,
             "hitValue": 1,
             "photo": "https://lavkaroz.ru/files/images/cache/Goods/Goods136/1cec89eff7-1_173x173.jpg",
@@ -93,6 +97,7 @@
         },
         {
             "id": 5,
+            "affiliation": 2,
             "hit": false,
             "hitValue": 2,
             "photo": "https://lavkaroz.ru/files/images/cache/Goods/Goods125/216f57850d-1_173x173.jpg",
@@ -115,6 +120,7 @@
         },
         {
             "id": 6,
+            "affiliation": 1,
             "hit": false,
             "hitValue": 2,
             "photo": "https://lavkaroz.ru/files/images/cache/Goods/Goods110/3b74cbd343-1_173x173.jpg",
@@ -142,6 +148,7 @@
         },
         {
             "id": 7,
+            "affiliation": 3,
             "hit": false,
             "hitValue": 3,
             "photo": "https://lavkaroz.ru/files/images/cache/Goods/Goods86/d4f904e76b-1_173x173.jpg",
@@ -166,6 +173,7 @@
         },
         {
             "id": 8,
+            "affiliation": 2,
             "hit": false,
             "hitValue": 2,
             "photo": "https://lavkaroz.ru/files/images/cache/Goods/Goods26/861ee3bbbd-3_173x173.jpg",

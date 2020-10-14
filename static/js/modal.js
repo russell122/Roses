@@ -72,5 +72,6 @@ let myModal = (btns, wrap) => {
 myModal('.header__top-personalArea', '.modal-lk');
 myModal('.modal__btn-registration', '.modal-registration');
 myModal('.modal__help', '.modal-recovery');
+myModal('.basket__wrap-btn', '.modal-thanks');
 
-	// end modal
+// end modal

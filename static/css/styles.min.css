@@ -1177,7 +1177,7 @@ button {
   padding: 50px 0;
   font-size: 16px;
   position: relative;
-  z-index: 5; }
+  z-index: 1; }
 
 .basket__table-wrap-close {
   cursor: pointer; }
@@ -1187,9 +1187,19 @@ button {
   width: 50%;
   padding: 20px 20px 30px 20px;
   border-radius: 3px; }
+  @media screen and (max-width: 767px) {
+    .basket__table-wrap {
+      width: 100%; } }
+  @media screen and (max-width: 576px) {
+    .basket__table-wrap {
+      font-size: 12px;
+      padding: 20px 5px; } }
 
 .basket th, .basket td {
   padding: 10px; }
+  @media screen and (max-width: 576px) {
+    .basket th, .basket td {
+      padding: 10px 2px; } }
 
 .basket__td-flex {
   display: -webkit-box;
@@ -1218,7 +1228,6 @@ button {
   margin: 10px 0 20px 0; }
 
 .basket__wrap-btn {
-  background-color: green;
   border: none;
   outline: none;
   color: #fff;
@@ -1226,7 +1235,24 @@ button {
   text-transform: uppercase;
   border-radius: 3px;
   padding: 10px 30px;
-  background-color: #E20A54; }
+  background: -webkit-gradient(linear, left top, left bottom, from(#E20A54), to(#E20A54));
+  background: -o-linear-gradient(top, #E20A54 0%, #E20A54 100%);
+  background: linear-gradient(180deg, #E20A54 0%, #E20A54 100%);
+  cursor: pointer;
+  -webkit-transition: all ease .2s;
+  -o-transition: all ease .2s;
+  transition: all ease .2s; }
+  .basket__wrap-btn:hover {
+    background: -webkit-gradient(linear, left top, left bottom, from(#E20A54), to(#f3095b));
+    background: -o-linear-gradient(top, #E20A54 0%, #f3095b 100%);
+    background: linear-gradient(180deg, #E20A54 0%, #f3095b 100%);
+    -webkit-transition: all ease .2s;
+    -o-transition: all ease .2s;
+    transition: all ease .2s; }
+  .basket__wrap-btn:active {
+    -webkit-transform: translateY(2px);
+        -ms-transform: translateY(2px);
+            transform: translateY(2px); }
 
 .basket .myMinus {
   position: relative;
@@ -1697,7 +1723,8 @@ button {
       font-family: "OpenSansLight", sans-serif; }
       @media screen and (max-width: 992px) {
         .header__block-logo h2 {
-          font-size: 24px; } }
+          font-size: 24px;
+          text-align: center; } }
       @media screen and (max-width: 576px) {
         .header__block-logo h2 {
           font-size: 18px; } }
@@ -2342,6 +2369,25 @@ button {
         -webkit-appearance: none !important;
         width: 100%;
         color: #333; }
+      .products .calculator__form-price-block input[type=range] {
+        -webkit-appearance: none;
+        /* Hides the slider so that custom slider can be made */
+        width: 100%;
+        /* Specific width is required for Firefox. */
+        background: transparent;
+        /* Otherwise white in Chrome */ }
+      .products .calculator__form-price-block input[type=range]::-webkit-slider-thumb {
+        -webkit-appearance: none; }
+      .products .calculator__form-price-block input[type=range]:focus {
+        outline: none;
+        /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */ }
+      .products .calculator__form-price-block input[type=range]::-ms-track {
+        width: 100%;
+        cursor: pointer;
+        /* Hides the slider so custom styles can be added */
+        background: transparent;
+        border-color: transparent;
+        color: transparent; }
       .products .calculator__form-price-block input[type=range]::-webkit-slider-thumb {
         position: relative;
         bottom: 4px;
@@ -2363,7 +2409,8 @@ button {
         border-bottom: 9px solid #0A6F74;
         width: 10px;
         height: 10px;
-        cursor: pointer; }
+        cursor: pointer;
+        display: none; }
       .products .calculator__form-price-block input[type=range]::-ms-thumb {
         position: relative;
         bottom: 4px;
@@ -2392,7 +2439,7 @@ button {
           -webkit-box-pack: center;
               -ms-flex-pack: center;
                   justify-content: center; } }
-      .products .calculator__form-btn a {
+      .products .calculator__form-btn button, .products .calculator__form-btn a {
         background-color: #006F75;
         display: block;
         padding: 11px 35px;
@@ -2402,13 +2449,16 @@ button {
         font-family: "OpenSansBold", sans-serif;
         -webkit-transition: all ease .2s;
         -o-transition: all ease .2s;
-        transition: all ease .2s; }
-        .products .calculator__form-btn a:hover {
+        transition: all ease .2s;
+        outline: none;
+        border: none;
+        cursor: pointer; }
+        .products .calculator__form-btn button:hover, .products .calculator__form-btn a:hover {
           background-color: #025257;
           -webkit-transition: all ease .2s;
           -o-transition: all ease .2s;
           transition: all ease .2s; }
-        .products .calculator__form-btn a:active {
+        .products .calculator__form-btn button:active, .products .calculator__form-btn a:active {
           -webkit-transform: translateY(2px);
               -ms-transform: translateY(2px);
                   transform: translateY(2px); }
@@ -2423,7 +2473,8 @@ button {
             flex: 0 1 38%;
     background-color: #fff;
     margin: 0 0 0 10px;
-    border-radius: 5px; }
+    border-radius: 5px;
+    position: relative; }
     @media screen and (max-width: 992px) {
       .products .search {
         margin: 0; } }
@@ -2445,6 +2496,35 @@ button {
         border-radius: 5px;
         border: 1px solid #EAEAEA;
         margin-right: 30px; }
+  .products .search__wrap-rez {
+    position: absolute;
+    width: 100%;
+    right: 0;
+    top: 70px;
+    background-color: #fff;
+    z-index: 10; }
+    .products .search__wrap-rez .search__rez {
+      padding: 10px 20px 20px 20px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+      .products .search__wrap-rez .search__rez a {
+        display: block;
+        margin-bottom: 5px;
+        color: #333;
+        -webkit-transition: all ease .1s;
+        -o-transition: all ease .1s;
+        transition: all ease .1s;
+        font-size: 18px; }
+        .products .search__wrap-rez .search__rez a:hover {
+          color: #126F73;
+          -webkit-transition: all ease .1s;
+          -o-transition: all ease .1s;
+          transition: all ease .1s; }
   .products .catalog__title {
     text-align: center;
     font-size: 52px;

@@ -175,24 +175,10 @@
                   <form class="calculator__form" action="" method="get">
                     <div class="calculator__form-flowers">
                       <select class="calculator__form-select" name="calculator__select">
-                        <option value="">Выберите цветы</option>
+                        <option value="0">Выберите цветы</option>
                         <option value="1">Голландские розы</option>
                         <option value="2">Местная роза</option>
-                        <option value="3">Пионовидные розы</option>
-                        <option value="4">Кустовые розы</option>
-                        <option value="5">Хризантема</option>
-                        <option value="6">Альстромерия</option>
-                        <option value="7">Гербера</option>
-                        <option value="8">Тюльпаны и Ирисы</option>
-                        <option value="9">Букеты 101 роза</option>
-                        <option value="10">Коробки с цветами</option>
-                        <option value="11">Пионы</option>
-                        <option value="12">Лилия</option>
-                        <option value="13">Корзины с цветами</option>
-                        <option value="14">Эустома</option>
-                        <option value="15">Каллы</option>
-                        <option value="16">Маттиола</option>
-                        <option value="17">Авторские букеты</option>
+                        <option value="3">Альстромерия</option>
                       </select>
                     </div>
                     <div class="calculator__form-price">
@@ -210,7 +196,9 @@
                         </div>
                       </div>
                     </div>
-                    <div class="calculator__form-btn"><a href="#">Показать</a></div>
+                    <div class="calculator__form-btn">
+                      <button href="#">Показать</button>
+                    </div>
                   </form>
                 </div>
               </div>
@@ -218,8 +206,11 @@
                 <form class="search__form" action="" method="get">
                   <div class="search__wrap">
                     <div class="search__wrap-top">
-                      <input type="text" placeholder="Поиск по сайту" name="calculatorSearch">
+                      <input type="text" placeholder="Поиск по сайту" name="calculatorSearch" autocomplete="off">
                       <div class="calculator__form-btn"><a href="#">Поиск</a></div>
+                    </div>
+                    <div class="search__wrap-rez">
+                      <ul class="search__rez"></ul>
                     </div>
                   </div>
                 </form>
@@ -481,6 +472,13 @@
                   <button class="modal__btn">Отправить</button>
                 </div>
               </form>
+            </div>
+          </div>
+        </section>
+        <section class="modal modal-thanks" data-modal="rec" data-modal-info>
+          <div class="modal__block">
+            <div class="modal__content">
+              <h1>Спасибо! Скоро мы с вами свяжемся.</h1>
             </div>
           </div>
         </section>

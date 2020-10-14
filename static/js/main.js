@@ -182,9 +182,7 @@ window.addEventListener('DOMContentLoaded', () => {
 					class="catalog__item-img"><img src=${obj.photo} alt="${obj.name}" /></div>
 			<div class="catalog__item-body">
 				<h4 class="catalog__item-title">${obj.name}</h4>
-				<span class="catalog__item-lable">${obj.price}
-				<div class="rub"></div>
-				 ${pieceGoods}</span>
+				<span class="catalog__item-lable" data-sort-lable=${obj.discountPersent}>${obj.price}<div class="rub"></div>${pieceGoods}</span>
 				<span class="catalog__item-discount">${price} 
 					<div class="rub"></div>
 				${pieceGoods}</span>
@@ -192,7 +190,7 @@ window.addEventListener('DOMContentLoaded', () => {
 			<div class="catalog__masc">
 				<div class="catalog__masc-wrap">
 					<h4 class="catalog__masc-title">${obj.name}</h4>
-					<span class="catalog__item-lable rub2">${obj.price}
+					<span class="catalog__item-lable rub2" data-sort-lable=${obj.discountPersent}>${obj.price}
 					${pieceGoods}</span>
 					<span class="catalog__item-discount rub">${price}
 					${pieceGoods}</span>
@@ -221,12 +219,24 @@ window.addEventListener('DOMContentLoaded', () => {
 					catalogItem.setAttribute('data-discountPersent', 0);
 				}
 
-
-
-
 			})
 
+
+			let myCatalogItemLable = document.querySelectorAll('.catalog__item-lable');
+
+			myCatalogItemLable.forEach(elem => {
+				if (elem.getAttribute('data-sort-lable') == 'false') {
+					elem.remove();
+				}
+
+			});
+
+
+
 		}
+
+
+
 
 
 
@@ -676,7 +686,11 @@ window.addEventListener('DOMContentLoaded', () => {
 
 			})
 
+			document.querySelector('.basket__table-wrap').addEventListener('submit', (e) => {
+				e.preventDefault();
 
+				// myModal('.basket__wrap-btn', '.modal-thanks');
+			})
 
 			let basketFullPriceBlock = document.querySelector('.basket__full-price-block');
 
@@ -700,11 +714,11 @@ window.addEventListener('DOMContentLoaded', () => {
 
 			recalculationOfTheFullAmount();
 
-			let btn = document.createElement('button');
-			btn.setAttribute("type", "submit");
-			btn.innerHTML = 'Заказать';
-			btn.classList.add('basket__wrap-btn');
-			basketFullPriceBlock.after(btn);
+			// let btn = document.createElement('button');
+			// btn.setAttribute("type", "submit");
+			// btn.innerHTML = 'Заказать';
+			// btn.classList.add('basket__wrap-btn');
+			// basketFullPriceBlock.after(btn);
 
 
 		}
@@ -745,6 +759,98 @@ window.addEventListener('DOMContentLoaded', () => {
 		}
 
 		deletingACartItem();
+
+		// Поиск
+
+		let searchInput = document.querySelector('.search__wrap-top input');
+		let searchRez = document.querySelector('.search__rez');
+
+		function fruitsOut(container, elem, arr) {
+			container.innerHTML = ''
+
+			arr.forEach(item => {
+				const elemCreateParam = document.createElement(elem);
+				elemCreateParam.href = `${item.url}.html`;
+				elemCreateParam.textContent = `${item.name}`;
+				container.appendChild(elemCreateParam);
+			})
+
+		}
+
+		if (searchInput) {
+			searchInput.addEventListener('input', function () {
+				fruitsOut(searchRez, 'a', handle(this.value, data.people))
+				console.log(handle(this.value, data.people))
+			})
+		}
+
+		function handle(text, arr) {
+			if (text.length === 0) {
+				let arr2 = [];
+				return arr2
+
+			}
+			return arr.filter(el => {
+				// return el.name.toLowerCase().indexOf(text.toLowerCase()) > -1
+
+
+				if (el.name.toLowerCase().search(text.toLowerCase()) > -1) {
+					return el
+				}
+			})
+		}
+
+
+
+		// Конец поиска
+
+
+		// Сортировка по range
+
+		let calculatorForm = document.querySelector('.calculator__form');
+		let calculatorFormSelect = document.querySelector('.calculator__form-select');
+		let catalogWrap = document.querySelector('.catalog__wrap');
+
+		if (calculatorForm) {
+			calculatorForm.addEventListener('submit', (e) => {
+				let catalogItem = document.querySelectorAll('.catalog__item');
+				e.preventDefault();
+
+				let calculatorFormPriceMin = document.querySelector('.calculator__form-price-min');
+				let calculatorFormPriceMax = document.querySelector('.calculator__form-price-max');
+				let myPrice;
+				let rez;
+
+				data.people.forEach((el, i) => {
+
+
+					if (el.discountPersent != false) {
+						rez = el.price / 100 * el.discountPersent;
+						myPrice = (el.price - rez).toFixed(0);
+
+					} else {
+						myPrice = el.price;
+					}
+
+					if (calculatorFormSelect.value == el.affiliation && (myPrice <= calculatorFormPriceMax.value && myPrice >= calculatorFormPriceMin.value)) {
+						catalogItem[i].classList.add('show')
+						catalogItem[i].classList.remove('hide')
+					} else {
+						catalogItem[i].classList.add('hide')
+						catalogItem[i].classList.remove('show')
+					}
+					if (calculatorFormSelect.value == 0 && (myPrice <= calculatorFormPriceMax.value && myPrice >= calculatorFormPriceMin.value)) {
+						catalogItem[i].classList.add('show')
+						catalogItem[i].classList.remove('hide')
+					}
+				})
+
+
+			})
+		}
+
+
+		// Конец Сортировки по range
 
 		// // Конец корзины 1
 
@@ -1029,6 +1135,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
 	// Конец проверки паролей в форме
+
 
 
 
