@@ -6,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="keywords" content="">
-    <link rel="stylesheet" type="text/css" href="static/css/styles.min.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"><link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="preload">
-<!--[if lt IE 9]>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&amp;display=swap" onload="this.rel='stylesheet'" as="style">
+    <link rel="preload" href="static/css/styles.min.css" onload="this.rel='stylesheet'" as="style" type="text/css"><!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script><![endif]-->
   </head>
   <body class="index-page28">
@@ -19,7 +19,7 @@
           <div class="container">
             <div class="header__top-wrap">
               <ul class="header__top-menu">
-                <li class="header__top-menu-list"><a class="header__top-menu-link" href="bigDelivery.html" title="Доставка и оплата" alt="Доставка и оплата">Доставка и оплата</a></li>
+                <li class="header__top-menu-list"><a class="header__top-menu-link" href="bigDelivery.html" title="Доставка и оплата">Доставка и оплата</a></li>
                 <li class="header__top-menu-list"><a class="header__top-menu-link" href="bigReviews.html">Отзывы</a></li>
                 <li class="header__top-menu-list"><a class="header__top-menu-link" href="bigBlog.html">Блог и новости</a></li>
                 <li class="header__top-menu-list"><a class="header__top-menu-link" href="bigAboutUs.html">О компании</a></li>
@@ -133,7 +133,7 @@
         <section class="modal modal-lk" data-modal="lk" data-modal-info>
           <div class="modal__block">
             <div class="modal__content">
-              <form action="">
+              <form>
                 <div class="modal__close" data-close>×</div>
                 <div class="modal__title">Авторизация</div>
                 <div class="modal__login modal__authorization">
@@ -160,7 +160,7 @@
         <section class="modal modal-registration" data-modal="reg" data-modal-info>
           <div class="modal__block">
             <div class="modal__content">
-              <form class="form-reg" action="">
+              <form class="form-reg">
                 <div class="modal__close" data-close>×</div>
                 <div class="modal__title">Регистрация</div>
                 <div class="modal__fio modal__authorization">
@@ -205,7 +205,7 @@
         <section class="modal modal-recovery" data-modal="rec" data-modal-info>
           <div class="modal__block">
             <div class="modal__content">
-              <form class="form-recovery" action="">
+              <form class="form-recovery">
                 <div class="modal__close" data-close>×</div>
                 <div class="modal__title">Восстановление пароля</div>
                 <div class="modal__email-recovery modal__authorization">
